@@ -946,12 +946,32 @@ i.chev-r {
 
 #contactenos .refresh-captcha:hover {
   color: #00d0fb !important;
-  transition: ease all .2s;
+  transition: ease all .2s;  
 }
 
 
-
-
+/* Directorio Page
+-------------------------------------------------- */
+#directorio { font-family: 'helvetica-roman';color: #55575b;}
+#directorio .title{
+  font-family: 'helvetica-bold';
+  font-size: 1.3rem;  
+  margin-bottom: 3rem;
+}
+#directorio .divider {     margin: 3rem 0;}
+#directorio h3{ font-family: 'helvetica-light'; font-size: 1.8rem;line-height: 20px;}
+#directorio .cargo {font-size: 1rem; color: #846f51}
+@media(max-width: 800px){
+  #directorio .col-12{
+    padding-right: 15px;
+    padding-left: 15px !important;
+  }
+  #directorio .divider{
+    margin: 0;
+  }
+  #directorio .resume { padding: 2rem 0;}
+  #directorio h3{     line-height: initial; }
+}
 
 
 /* Utilities
