@@ -49,31 +49,41 @@ $(function () {
         $('html, body').animate({ scrollTop: 0 }, '300');
     });
 
-    /* Header Small / Tall
+    /* Header Small / Tall  - ONLY DESKTOP
     *****************************************************/
-    $(window).scroll(function () {
+    if (!isMobileDevice()) {
+        $(window).scroll(function () {
+            var $nav = $('.nav-principal');
+            if ($(window).scrollTop() > 100) {
+                $nav.addClass('small');
+                $nav.find('.logo').addClass('small');
+                $nav.find('.search-form').addClass('small');
+                $nav.find('.navbar-nav').removeClass('mt-5').css('margin-top', '-15px');
+                $('.nav-top').find('.search-form-top').addClass('small');
+                $('#carousel-principal.carousel').addClass('small');
+            } else {
+                $nav.removeClass('small');
+                $nav.find('.logo').removeClass('small');
+                $nav.find('.search-form').removeClass('small');
+                $nav.find('.navbar-nav').addClass('mt-5');
+                $nav.find('.navbar-nav').removeAttr('style');
+                $('#carousel-principal.carousel').removeClass('small');
+                $('.nav-top').find('.search-form-top').removeClass('small');
+                //reset search-top-nav
+                $('.search-form-top').find('form').removeAttr('style');
+                $('.search-form-top').find('img').attr('src', 'images/icons/icon-lupa-small.png');
+                $('.search-form-top').find('.btn-nav-top-search').attr('data-action', 'open')
+            }
+        });
+    } else {
         var $nav = $('.nav-principal');
-        if ($(window).scrollTop() > 100) {
-            $nav.addClass('small');
-            $nav.find('.logo').addClass('small');
-            $nav.find('.search-form').addClass('small');
-            $nav.find('.navbar-nav').removeClass('mt-5').css('margin-top', '-15px');
-            $('.nav-top').find('.search-form-top').addClass('small');
-            $('#carousel-principal.carousel').addClass('small');
-        } else {
-            $nav.removeClass('small');
-            $nav.find('.logo').removeClass('small');
-            $nav.find('.search-form').removeClass('small');
-            $nav.find('.navbar-nav').addClass('mt-5');
-            $nav.find('.navbar-nav').removeAttr('style');            
-            $('#carousel-principal.carousel').removeClass('small');
-            $('.nav-top').find('.search-form-top').removeClass('small');            
-            //reset search-top-nav
-            $('.search-form-top').find('form').removeAttr('style');
-            $('.search-form-top').find('img').attr('src','images/icons/icon-lupa-small.png');
-            $('.search-form-top').find('.btn-nav-top-search').attr('data-action','open')
-        }
-    });
+        $nav.addClass('small');
+        $nav.find('.logo').addClass('small');
+        $nav.find('.search-form').addClass('small');
+        $nav.find('.navbar-nav').removeClass('mt-5').css('margin-top', '-15px');
+        $('.nav-top').find('.search-form-top').addClass('small');
+        $('#carousel-principal.carousel').addClass('small');
+    }
 
     /* Header top search small
     *****************************************************/
@@ -93,9 +103,9 @@ $(function () {
             $(this).find('img').attr('src', 'images/icons/icon-lupa-small.png');
             //hide input 
             var $item = $(this).parent().next();
-            $item.removeAttr('style')    
+            $item.removeAttr('style')
             //change action state button
-            $(this).attr('data-action', 'open')        
+            $(this).attr('data-action', 'open')
         }
 
     });
@@ -118,3 +128,6 @@ function toggleSliderControls($context) {
         }
     }, 600);
 }
+function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+};

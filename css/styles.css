@@ -106,13 +106,13 @@ a:hover, a:active, a:focus{ color: #414141;text-decoration: none;}
 }
 .nav-principal .navbar{ top:3rem;}
 .nav-principal.small{
-    height: 80px !important;
+    height: 85px !important;
     transition: ease .3s all;
 }
 .nav-principal ul{
     font-size: 1.2rem;
 }
-.nav-principal ul li { padding-left: 23px !important;padding-right: 23px !important;  }
+.nav-principal ul li { padding-left: 23px !important;padding-right: 23px !important; }
 .nav-principal ul li:last-child { padding-right: 0 !important;}
 .nav-principal ul li a{ position: relative;}
 .nav-principal ul li a::after{
@@ -128,13 +128,21 @@ a:hover, a:active, a:focus{ color: #414141;text-decoration: none;}
 .nav-principal ul li a:hover::after { width: 84%; transition: ease all .3s;}
 @media(max-width: 800px){
     .nav-principal #navbarCollapse{
-        background: #beb8ad;
+        background: rgba(10, 10, 10, 0.95);
         margin-left: -16px !important;
         margin-right: -16px !important;
     }
+    .nav-principal ul li {
+        border-bottom: 1px solid #464646;
+    }
     .nav-principal #navbarCollapse .navbar-nav{
+        width: 91%;
         margin-left: 1rem !important;
         margin-top: 1rem !important;
+        margin-bottom: 18rem;
+    }
+    .nav-principal #navbarCollapse .navbar-nav .nav-link {
+        color: #dcdcdc;
     }
     .nav-principal #navbarCollapse .search-form{
         position: relative;
@@ -148,10 +156,10 @@ a:hover, a:active, a:focus{ color: #414141;text-decoration: none;}
     #carousel-principal .carousel-item {
         height: 33.5rem !important;
     }
-    #carousel-principal .carousel-item img.img-slide{
+    /*#carousel-principal .carousel-item img.img-slide{
         width: 200% !important;
         height: 100%;
-    }
+    }*/
     #carousel-principal .carousel-item .s-4{
         font-size: 2rem;
         line-height: 2.2rem;
@@ -164,9 +172,16 @@ a:hover, a:active, a:focus{ color: #414141;text-decoration: none;}
         width: 80%;
         bottom: 2rem;
     }
+    #carousel-principal.carousel.small {
+        padding-top: 5rem;
+    }
+    /*-- Enfocados */
+    .enfocados h1.title {
+        font-size: 2.5rem !important;
+    }
     .enfocados h1.title:after {
-        width: 61% !important;
-        right: 8rem !important;
+        width: 73% !important;
+        right: 5.5rem !important;
     }
     /*-- Marcas */
     .jumbotron {
@@ -177,6 +192,34 @@ a:hover, a:active, a:focus{ color: #414141;text-decoration: none;}
     }
     .marcas p {
         width: 100% !important;
+    }
+    .jumbotron h1.title{
+        font-size: 2.5rem;
+    }
+    /*-- Noticicas */
+    .noticias .row { margin-left: 0 !important;}
+    /*-- Footer */
+    .footer .col-12{
+        margin-bottom: 2rem;
+        padding-left: 2rem;
+    }
+    .footer .copyright{
+        height: 130px !important;
+    }
+    .footer .copyright .col-12{
+        text-align: center !important;
+        margin-bottom: 0 !important;
+    }
+    .footer .copyright .nav{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    /*-- Navtop */
+    .nav-top ul {
+        font-size: .65rem;
+        margin-left: 1rem !important;
+        flex-direction: row;
     }
 }
 /*-- Logo */
