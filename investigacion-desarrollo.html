@@ -101,13 +101,13 @@
     <div id="filters">
       <div class="container jumbotron bg-secondary">
         <div class="row">
-          <div class="col-3">
+          <div class="col-12 col-lg-3">
             <h2>Investigaciones</h2>
           </div>
-          <div class="col-3 ml-auto text-right"><a href="#" class="btn btn-black">Busqueda Avanzada</a></div>
+          <div class="col-12 col-lg-3 ml-auto text-right"><a href="#" class="btn btn-black">Busqueda Avanzada</a></div>
         </div>
         <div class="row">
-          <div class="col-4">
+          <div class="col-12 col-lg-4 options">
             <div class="form-group">
               <label>Tipo de Investigación</label>
               <select name="tipo" class="w-50" id="">
@@ -116,7 +116,7 @@
               </select>
             </div>
           </div>
-          <div class="col-4 text-center">
+          <div class="col-12 col-lg-4 text-center options">
             <div class="form-group">
               <label>Especies</label>
               <select name="especie" class="w-50" id="">
@@ -125,7 +125,7 @@
               </select>
             </div>
           </div>
-          <div class="col-4 text-right">
+          <div class="col-12 col-lg-4 text-right options">
             <div class="form-group">
               <label>Categoria Comercial</label>
               <select name="tipo" class="w-50" id="">
@@ -145,10 +145,11 @@
         <article class="post col-lg-12">
           <div class="card">
             <div class="card-body row">
-              <div class="thumb col-12 col-lg-4 offset-lg-1"><img src="images/investigacion-thumb.png" alt=""></div>
+              <div class="thumb col-12 col-lg-4 offset-lg-1"><a href="#"><img src="images/investigacion-thumb.png"
+                    alt=""></a></div>
               <div class="description col-12 col-lg-6">
                 <header>
-                  <h1>Petonic<span>®</span>&nbsp; Recuperation</h1>
+                  <a href="#" class="h1">Petonic<span>®</span>&nbsp; Recuperation</a>
                   <h4>Solución Oral</h4>
                 </header>
                 <section>
@@ -156,11 +157,19 @@
                     nucleótidos (Petonic ® Recuperation) en la estimulación del apetito y el
                     consumo de agua y alimento y en la mejora de valores hematológicos de caninos
                     con una nutrición inadecuada.</p>
-
-                    <a href="#" class="btn btn-black">Descargar </a>
-                    <div class="share">
-                      Compartir <a href="#" class="btn btn-tw"></a> <a href="#" class="btn btn-fb"></a> <a href="#" class="btn btn-ws"></a>
+                  <div class="d-flex flex-row">
+                    <div class="">
+                      <a href="#" class="btn btn-black">Descargar </a>
                     </div>
+                    <div class="share pt-4 pl-4">
+                      Compartir <a href="#" class="btn btn-tw ml-2"></a> <a href="#" class="btn btn-fb"></a> <a href="#"
+                        class="btn btn-ws"></a>
+                    </div>
+                  </div>
+
+                  <div class="share">
+
+                  </div>
 
                 </section>
               </div>
@@ -171,10 +180,11 @@
         <article class="post col-lg-12">
           <div class="card">
             <div class="card-body row">
-              <div class="thumb col-12 col-lg-4 offset-lg-1"><img src="images/investigacion-thumb.png" alt=""></div>
+              <div class="thumb col-12 col-lg-4 offset-lg-1"><a href="#"><img src="images/investigacion-thumb.png"
+                    alt=""></a></div>
               <div class="description col-12 col-lg-6">
                 <header>
-                  <h1>Petonic<span>®</span>&nbsp; Recuperation</h1>
+                  <a href="#" class="h1">Petonic<span>®</span>&nbsp; Recuperation</a>
                   <h4>Solución Oral</h4>
                 </header>
                 <section>
@@ -182,9 +192,20 @@
                     nucleótidos (Petonic ® Recuperation) en la estimulación del apetito y el
                     consumo de agua y alimento y en la mejora de valores hematológicos de caninos
                     con una nutrición inadecuada.</p>
-                  <div class="actions">
-                    <a href="#" class="btn btn-black">Descargar </a>
+                  <div class="d-flex flex-row">
+                    <div class="">
+                      <a href="#" class="btn btn-black">Descargar </a>
+                    </div>
+                    <div class="share pt-4 pl-4">
+                      Compartir <a href="#" class="btn btn-tw ml-2"></a> <a href="#" class="btn btn-fb"></a> <a href="#"
+                        class="btn btn-ws"></a>
+                    </div>
                   </div>
+
+                  <div class="share">
+
+                  </div>
+
                 </section>
               </div>
             </div>
@@ -194,7 +215,13 @@
       </div>
     </div>
 
-
+    <nav aria-label="page navigation">
+      <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+      </ul>
+    </nav>
 
 
     <!-- FOOTER -->
