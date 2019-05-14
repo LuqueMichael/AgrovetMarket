@@ -1523,6 +1523,56 @@ i.chev-r {
   }
 }
 
+/* Nosotros
+-------------------------------------------------- */
+.nosotros{
+  font-family: 'helvetica-light';
+  color: #0a0a0a;
+}
+.nosotros .jumbotron{ background-color: #e9e8e9;padding: 8rem 0;}
+.nosotros h1 { font-size: 3.7rem; max-width: 80%; }
+.nosotros h3 { font-size: 1.87rem; border-bottom: 1px solid #AE8C70 }
+.nosotros p { text-align: justify;}
+.nosotros .resume{
+  padding-bottom: 7rem;
+}
+.nosotros .title {
+  font-family: 'helvetica-bold';
+  font-size: 3rem;
+}
+.nosotros .subtitle {
+  font-size: 3rem;
+}
+.nosotros h4{
+  font-size: 1.6rem;
+}
+.nosotros .mv{
+  padding: 7.5rem 0;
+}
+.nosotros .mv p { font-size: .87rem }
+.nosotros .norms img { width: 171px; }
+.nosotros .norms h3 { width: fit-content; font-family: 'helvetica-roman'; font-size: 1.87rem;padding-bottom: 1px; margin-top: 8px; margin-bottom: 1.9rem;}
+.nosotros .norms p { font-size: .87rem;}
+.nosotros .norms { padding: 6rem 0; }
+.nosotros .norms .row { margin-bottom: 6rem;}
+.nosotros .valores h1 { font-size: 2.25rem;}
+.nosotros .valores strong { font-family: 'helvetica-bold';}
+.nosotros .valores .valor { border: 1px solid #000;padding: 1.65rem 5rem 1rem 2.3rem; }
+.nosotros .valores .valor h4{ width: fit-content; font-family: 'helvetica-bold'; padding-bottom: 5px; margin-bottom: 15px;  font-size: 1.1rem; border-bottom: 1px solid #000}
+.nosotros .valores .valor p { font-size: .87rem;line-height: 1.15rem;}
+.nosotros .valores p.last-text { font-size: 1.12rem; font-family: 'helvetica-bold'; }
+@media(max-width: 800px){
+  .nosotros .title {  font-size: 2rem; }
+  .nosotros .subtitle {  font-size: 2rem; }
+  .nosotros h4 { font-size: .95rem;margin-top: -25px; margin-bottom: 25px;}
+  .nosotros h1 {font-size: 3.1rem; /*margin-bottom: 2rem;*/}
+  .nosotros .mv h1{margin-bottom:2rem;}
+  .nosotros .norms {padding: 0 15px;}
+  .nosotros .norms img {margin-bottom: 2rem;}
+  .nosotros .valores .valor {padding: 1.65rem 2.2rem 1rem 2.3rem;}
+  .nosotros .valores .valor h4{ margin-top: 0;}
+}
+
 /* Utilities
 -------------------------------------------------- */
 .bg-black {
