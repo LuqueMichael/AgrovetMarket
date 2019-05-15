@@ -55,6 +55,18 @@ a:focus {
   background-color: #f4f4f4 !important;
 }
 
+.breadcrumb{
+  background-color: #fff;
+  font-family: 'helvetica-roman';
+  font-size: 0.8rem;
+  color: #454545;
+  padding: 0;
+}
+.breadcrumb .breadcrumb-item.active { font-family: 'helvetica-bold';color: #454545;}
+.breadcrumb .breadcrumb-item a{
+  color: #454545;
+}
+
 .btn-up {
   background: url('../images/icons/icon-up.png') no-repeat;
   padding: 13px;
@@ -214,6 +226,7 @@ a:focus {
   background: #fff;
   position: fixed;
   transition: ease .2s all;
+  box-shadow: 0 0 5px #c1c1c1;
 }
 
 .nav-principal .navbar {
@@ -1708,6 +1721,230 @@ i.chev-r {
   .noticias-page .card-heading h1{ font-size: 1.8rem}
   .noticias-page .card-heading .date { font-size: .8rem}
 }
+/* Productos
+-------------------------------------------------- */
+.lista-productos .card{
+  overflow:hidden;margin-bottom:42px;height:390px;padding-top:15px!important;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 0;
+}
+.lista-productos .card:hover .info img{transform:scale(.85);-moz-transform:scale(.85);transition:ease-in-out .3s transform;transition-delay:.1s;}
+.lista-productos i.copy{font-size:13px!important;}
+.lista-productos .card-body .info{background:#fff;position:relative;top:0;transition:ease-out .3s all;text-align:left;}
+.lista-productos .card-body .info .text{z-index:999;position:relative;}
+.lista-productos .card-body img.thumb {
+  width: 313px;
+  height: 213px;
+  margin: 40px 0;
+  transition: ease .2s all;
+}
+.lista-productos .card::after{content:"";position:absolute;bottom:0;width:100%;height:0;background:#f5f5f5;transition:ease-in-out height .2s;}
+.lista-productos .card:hover::after{height:116px;transition:ease-in height .3s;}
+.lista-productos .card:hover .text .card-title{margin-top:-20px;transition:linear all .3s;}
+.lista-productos .card:hover .card-subtitle{height:0;opacity:0;margin-top:-30px;transition:ease-in .3s height;}
+.lista-productos .card:hover .info-hover{margin-top:20px;transition:ease all .3s;visibility: visible}
+.card-body .info-hover { padding-left: 1rem;visibility: hidden; position: relative; z-index: 9999;}
+.card-body .info-hover .icon-container{margin-top:-7px;}
+.card-body .info-hover .icon{width:22px;height:29px;margin:-9px 15px 0 0;float:right;}
+.card-body .info-hover .icon.image{background:url(../images/icons/icon-copia-image.png);}
+.card-body .info-hover .icon.image:hover{background:url(../images/icons/icon-copia-image-h.png);}
+.card-body .info-hover .icon.pdf{background:url(../images/icons/icon-copia-pdf.png);}
+.card-body .info-hover .icon.pdf:hover{background:url(../images/icons/icon-copia-pdf-h.png);}
+ h1.title{color:#333;font-size:36px;font-family:'helvetica-bold';margin-bottom:35px;}
+.lista-productos .card-body h5.card-title,.lista-productos .card-body a.card-title{font-family:'helvetica-bold';font-size:20px;color:#000;padding-left:15px;transition:linear all .3s;text-decoration:none;}
+.lista-productos .card-body h6.card-subtitle{font-family:'helvetica-roman';font-size:15px;color:#211915;padding-left:15px;height:auto;opacity:1;transition:ease-in-out .3s all;}
+.lista-productos .card-body h6.card-subtitle-2{font-family:'helvetica-roman';font-size:15px;color:#846f51;margin-top:5px;margin-bottom:20px;}
+.lista-productos .card-body a.link-more{font-family:'helvetica-roman';font-size:14px;color:#55575b;float:left;}
+
+.lista-productos .customcheck {
+  display: block;
+  position: absolute;
+  right: 1rem;
+  padding-top: 3px;
+  color: #999999;
+  padding-right: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: .8rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 999;
+}
+
+.lista-productos .customcheck input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.lista-productos .checkmark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 21px;
+  width: 21px;
+  background-color: #fff;
+  border: 1px solid #AFAFAF;
+  margin-top: 3px;
+  border-radius: 3px;
+}
+
+.lista-productos .customcheck:hover input~.checkmark {
+  background-color: #f3f2f0;
+}
+
+.lista-productos .customcheck input:checked~.checkmark {
+  background-color: #f3f3f3;
+}
+
+.lista-productos .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.lista-productos .customcheck input:checked~.checkmark:after {
+  display: block;
+}
+
+.lista-productos .customcheck .checkmark:after {
+  right: 4px;
+  top: 0;
+  width: 10px;
+  height: 16px;
+  border: solid #000;
+  border-width: 0 4px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* Producto Detalle
+-------------------------------------------------- */
+.producto-detalle .info-producto h1.title {
+  font-family: 'helvetica-bold';
+  font-size: 26.9px;
+  color: #000;
+  margin-bottom: 5px;
+}
+.producto-detalle .info-producto h4.subtitle {
+  font-family: 'helvetica-roman';
+  font-size: 17.9px;
+  color: #bea373;
+  margin-bottom: 15px;
+}
+.producto-detalle .info-producto .btn-link::after{
+  content: "-";
+  position: absolute;
+  right: 0;
+  top: -8px;
+  font-size: 1.5rem;
+  color: #D5B994;
+}
+.producto-detalle .info-producto .btn-link.collapsed::after{
+  content: "+";
+}
+.producto-detalle .info-producto .tipo {
+  font-family: 'helvetica-roman';
+  font-size: 15px;
+  color: #55575b;
+}
+.producto-detalle .info-producto .card-body {
+  font-family: 'helvetica-light';
+  font-size: 14px;
+  color: #211915;
+  padding: 25px 0 !important;
+}
+.producto-detalle .info-producto .card, .producto-detalle .info-producto .btn-link, .producto-detalle .info-producto .card-body {
+  border: 0;
+  padding: 0;
+}
+.producto-detalle .info-producto .card-header {
+  padding: .7rem 0;
+  margin-bottom: 1px;
+  border-bottom: 1px solid #f2f1f2 !important;
+}
+.producto-detalle .card-header { 
+  background-color: #fff;
+}
+.producto-detalle .info-producto .card-header .btn-link {
+  font-family: 'helvetica-roman';
+  font-size: 15.5px;
+  color: #211915;
+  width: 100%;
+  text-align: left;
+  position: relative;
+}
+.producto-detalle .info-producto .card-header.copy { border-bottom: 0 !important;  }
+.producto-detalle .info-producto .card-header.copy p{
+  color: #826d4d;
+  font-size: 14px;
+  margin-top: 1rem
+}
+.producto-detalle .submenu {
+  padding: 0;
+}
+.producto-detalle ul.nav li.nav-item{padding-left:21px;font-size:15.4px;display:flex;align-items:center;}
+.producto-detalle ul.nav li a.nav-link{font-family:helvetica-roman;color:#76777a;text-decoration:none;letter-spacing:.1px;position:relative;font-size: 0.88rem;}
+.producto-detalle ul.nav li a.nav-link:hover,.producto-detalle ul.nav li a.nav-link.active{color:#9c8967;transition:.3s;}
+.producto-detalle ul.nav li a.nav-link:before{
+  content: ' ';
+  position: absolute;
+  top: 70%;
+  right: 1rem;
+  width: 27px;
+  height: 1px;
+  background: #9c8967;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .5s;
+  line-height: normal;
+
+}
+.producto-detalle ul.nav li a.nav-link:hover:before,.producto-detalle ul.nav li a.nav-link.active:before{transform:scaleX(1);transform-origin:left;color:#9c8967;}
+.producto-detalle .submenu img {
+  margin-right: 8px;
+}
+.producto-detalle .submenu button.btn.btn-buy {
+  font-family: 'helvetica-roman';
+  background: #303030;
+  height: 100%;
+  border-radius: 0;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.producto-detalle .submenu .dropdown-menu{
+  width: 91%; 
+}
+.producto-detalle .warning {
+  font-family: 'helvetica-roman';
+  font-size: 12px;
+  color: #55575b;
+  background: url(../images/icons/icon-warning.png) no-repeat 34px 23px;
+  padding: 30px 70px;
+}
+.producto-detalle h2.title {
+  font-size: 2.25rem;
+  font-family: 'helvetica-roman';
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.producto-detalle .lista-productos {
+  margin-top: 7rem;
+}
+@media(max-width: 800px){
+  .producto-detalle ul.nav li a.nav-link { padding: 0;}
+  .producto-detalle .submenu img { transform: scale(.5)}
+  .producto-detalle .info-producto h1.title { margin-top: 2rem; text-align: center;}
+  .producto-detalle .info-producto h4.subtitle {text-align: center }
+}
+
+
 
 /* Utilities
 -------------------------------------------------- */
