@@ -895,22 +895,38 @@ i.chev-r {
 }
 
 #contactenos select.form-control {
+  position: relative;  
+  appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-  position: realtive;
-  background: url(../img/form-select-arrow.png) no-repeat top 12px right 12px;
-  background-size: 15px;
-  transition: ease-in-out .2s all;
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px;
+  background-repeat: no-repeat;
+}
+#contactenos select.form-control:focus {
+  background-image:
+    linear-gradient(45deg, #747474 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, #747474 50%);
+  background-position:
+    calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px;
+  background-repeat: no-repeat;
+  border-color: #747474;
+  outline: 0;
 }
 
-#contactenos select.form-control:focus {
-  background: url(../img/form-select-arrow-up.png) no-repeat top 12px right 12px;
-  background-size: 16px;
-  transition: ease-in .2s all;
-}
 
 #contactenos .checkboxes {
   padding-left: 20px;
@@ -1255,6 +1271,25 @@ i.chev-r {
   background-repeat: no-repeat;
   border-color: #747474;
   outline: 0;
+}
+#filters button.btn-filters {
+  height: 31px;
+  border: 1px solid #d8d8d8;
+  background: #fff;
+  border-radius: 0;
+  color: #999999 !important;
+  font-size: 0.75rem;
+  padding: 0 1.2rem;
+  padding-right: 2rem;
+  padding-bottom: 2px;
+}
+#filters .dropdown-menu.show {
+  border-radius: 0;
+  width: 100%;
+}
+#filters a.dropdown-item {
+  font-size: .8rem;
+  color: #4e4e4e;
 }
 
 .articles {
