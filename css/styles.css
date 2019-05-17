@@ -1454,6 +1454,8 @@ i.chev-r {
   #filters .options .form-group {
     margin: 10px 0 0 0;
   }
+  #filters .btn-black, 
+  #filters .btn-filters { width: 100%;}
 
   .heading-page p {
     font-size: .9rem;
@@ -1805,7 +1807,7 @@ i.chev-r {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  z-index: 999;
+  z-index: 9;
 }
 
 .lista-productos .customcheck input {
@@ -1854,6 +1856,30 @@ i.chev-r {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+.lista-productos .popcheck {
+  max-width: 20rem;
+  background: #fff;
+  font-family: 'helvetica-light';
+  padding: 1.2rem .9rem;
+  border: 1px solid #aeadab;
+  font-size: 14px;
+  position: absolute;
+  z-index: 99;
+}
+.lista-productos .popcheck strong{ font-family: 'helvetica-bold' }
+.lista-productos .popcheck a.btn-close {
+  background: #000 url(../images/icons/icon-close.png) no-repeat center;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 5px;
+  top: 5px;
+  transition: ease .2s all;
+}
+.lista-productos .popcheck a.btn-close:hover {
+  background-color: #86693c;
+  transition: ease .2s all;
 }
 /* Producto Detalle
 -------------------------------------------------- */
