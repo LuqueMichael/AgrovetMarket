@@ -12,13 +12,9 @@
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="plugins/magic_css/magic.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="css/styles.css">
-  <style>
-      main {
-        margin-top: 9.4rem;
-      }
-      @media(max-width: 800px){main {margin-top: 5rem;}}
-    </style>
+
 </head>
 
 <body>
@@ -32,49 +28,51 @@
             <li class="nav-item"><a href="#" class="nav-link">Noticias</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Catálogos</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Siguenos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Noticias</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Catálogos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Siguenos</a></li>
             <div class="divider"></div>
             <li class="nav-item"><a href="#" class="nav-link">English</a></li>
             <div class="search-form-top">
               <div class="divider"></div>
-              <li class="nav-item">
+              <li>
                 <a style="margin-top:-23px" href="#" class="nav-link btn-nav-top-search" data-action="open">
-                  <img src="images/icons/icon-lupa-small.png" alt=""></a>
-              </li>
+                <img src="images/icons/icon-lupa-small.png" alt=""></a>
+              </li>      
               <form class="form-inline">
                 <input class="form-control mr-sm-2" type="text" placeholder="¿Qué estás buscando?">
-              </form>
-            </div>
+              </form>          
+            </div>   
           </ul>
         </div>
       </nav>
     </div>
     <div class="nav-principal">
-      <nav class="navbar navbar-expand-md fixed-top navbar-light">
-        <div class="container position-relative">
-          <a class="navbar-brand logo" href="#"></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse row" id="navbarCollapse">
-
-            <form class="form-inline search-form">
-              <input class="form-control mr-sm-2" type="text" placeholder="¿Qué estás buscando?"
-                aria-label="¿Qué estás buscando?">
-              <button class="btn btn-lupa" type="submit"></button>
-            </form>
-            <div class="clear-fix"></div>
-            <ul class="navbar-nav ml-auto mt-5">
-              <li class="nav-item"><a href="#" class="nav-link">Nosotros</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Productos</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">I&D</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Distribuidores</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Contáctenos</a></li>
-            </ul>
-
+        <nav class="navbar navbar-expand-md  navbar-light">
+          <div class="container position-relative">
+              <a class="navbar-brand logo" href="#"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse row" id="navbarCollapse">    
+                <form class="form-inline search-form">
+                  <input class="form-control mr-sm-2" type="text" placeholder="¿Qué estás buscando?"
+                    aria-label="¿Qué estás buscando?">
+                  <button class="btn btn-lupa" type="submit"></button>
+                </form>
+                <div class="clear-fix"></div>
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item"><a href="#" class="nav-link">Nosotros</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Productos</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">I&D</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Distribuidores</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Contáctenos</a></li>
+                </ul>
+    
+              </div>
           </div>
-        </div>
-      </nav>
+        </nav>
     </div>
   </header>
 
@@ -101,10 +99,10 @@
           <h4 class="title">Gerencia General</h4>
         </div>
         <!-- Item 1 -->
-        <div class="col-12 col-lg-4">
+        <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-duration="1500">
           <img src="images/gerencia-photo.png" class="img-fluid" alt="">
         </div>
-        <div class="col-12 col-lg-4 mr-5 pl-0 resume">
+        <div class="col-12 col-lg-4 mr-5 pl-0 resume"  data-aos="fade-up" data-aos-duration="1500">
           <h3>Umberto Calderón</h3>
           <p class="cargo">Gerencia General</p>
           <ul class="navbar-nav">
@@ -115,7 +113,7 @@
         </div>
         <div class="col-12 divider"></div>
         <!-- Item 2 -->
-        <div class="col-12 col-lg-4 resume">
+        <div class="col-12 col-lg-4 resume" data-aos="fade-up" data-aos-duration="1600">
           <h3>Sandra Meneses</h3>
           <p class="cargo">Jefe de Ventas Internacionales</p>
           <ul class="navbar-nav">
@@ -124,7 +122,7 @@
             <li>E-mail: <a href="#"><a href="#">sandra.meneses@agrovetmarket.com</a></a></li>
           </ul>
         </div>
-        <div class="col-12 col-lg-4 pl-0 resume">
+        <div class="col-12 col-lg-4 pl-0 resume"  data-aos="fade-up" data-aos-duration="1600">
           <h3>Nelson Jesús Baca</h3>
           <p class="cargo">Jefe Técnico Comercial Internacional Aves /Porcinos</p>
           <ul class="navbar-nav">
@@ -146,10 +144,10 @@
         </div>
 
         <!-- Item 1 -->
-        <div class="col-12 col-lg-4 mb-3">
+        <div class="col-12 col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="1500">
           <img src="images/gerencia-photo.png" class="img-fluid" alt="">
         </div>
-        <div class="col-12 col-lg-4 mr-5 pl-0 resume">
+        <div class="col-12 col-lg-4 mr-5 pl-0 resume" data-aos="fade-up" data-aos-duration="1500">
           <h3>Rodolfo Miyashiro Pérez</h3>
           <p class="cargo">Gerente Comercial Local</p>
           <ul class="navbar-nav">
@@ -161,7 +159,7 @@
         <div class="col-12 divider"></div>
 
         <!-- Item 2 -->
-        <div class="col-12 col-lg-4 resume">
+        <div class="col-12 col-lg-4 resume" data-aos="fade-up" data-aos-duration="1600">
           <h3>Willy Calderón</h3>
           <p class="cargo">Sub Gerente de Ventas</p>
           <ul class="navbar-nav">
@@ -170,7 +168,7 @@
             <li>E-mail: <a href="#">sandra.meneses@agrovetmarket.com</a></li>
           </ul>
         </div>
-        <div class="col-12 col-lg-4 pl-0 resume">
+        <div class="col-12 col-lg-4 pl-0 resume" data-aos="fade-up" data-aos-duration="1600">
           <h3>Pedro Calderón</h3>
           <p class="cargo">Jefe de Ventas Ganadería</p>
           <ul class="navbar-nav">
@@ -179,7 +177,7 @@
             <li>E-mail: <a href="#">nelson.baca@agrovetmarket.com</a></li>
           </ul>
         </div>
-        <div class="col-12 col-lg-4 pl-0 resume">
+        <div class="col-12 col-lg-4 pl-0 resume" data-aos="fade-up" data-aos-duration="1600">
           <h3>Veronica Campos Facundo</h3>
           <p class="cargo">Supervisor Técnico Comercial Ganadería</p>
           <ul class="navbar-nav">
@@ -191,7 +189,7 @@
         <div class="col-12 divider"></div>
 
         <!-- Item 3 -->
-        <div class="col-12 col-lg-4 resume">
+        <div class="col-12 col-lg-4 resume" data-aos="fade-up" data-aos-duration="1600">
             <h3>Willy Calderón</h3>
             <p class="cargo">Sub Gerente de Ventas</p>
             <ul class="navbar-nav">
@@ -200,7 +198,7 @@
               <li>E-mail: <a href="#">sandra.meneses@agrovetmarket.com</a></li>
             </ul>
           </div>
-          <div class="col-12 col-lg-4 pl-0 resume">
+          <div class="col-12 col-lg-4 pl-0 resume" data-aos="fade-up" data-aos-duration="1600">
             <h3>Pedro Calderón</h3>
             <p class="cargo">Jefe de Ventas Ganadería</p>
             <ul class="navbar-nav">
@@ -209,7 +207,7 @@
               <li>E-mail: <a href="#">nelson.baca@agrovetmarket.com</a></li>
             </ul>
           </div>
-          <div class="col-12 col-lg-4 pl-0 resume">
+          <div class="col-12 col-lg-4 pl-0 resume" data-aos="fade-up" data-aos-duration="1600">
             <h3>Veronica Campos Facundo</h3>
             <p class="cargo">Supervisor Técnico Comercial Ganadería</p>
             <ul class="navbar-nav">
@@ -221,7 +219,7 @@
           <div class="col-12 divider"></div>
 
         <!-- Item 4 -->
-        <div class="col-12 col-lg-4 resume">
+        <div class="col-12 col-lg-4 resume" data-aos="fade-up" data-aos-duration="1600">
             <h3>Willy Calderón</h3>
             <p class="cargo">Sub Gerente de Ventas</p>
             <ul class="navbar-nav">
@@ -230,7 +228,7 @@
               <li>E-mail: <a href="#">sandra.meneses@agrovetmarket.com</a></li>
             </ul>
           </div>
-          <div class="col-12 col-lg-4 pl-0 resume">
+          <div class="col-12 col-lg-4 pl-0 resume" data-aos="fade-up" data-aos-duration="1600">
             <h3>Pedro Calderón</h3>
             <p class="cargo">Jefe de Ventas Ganadería</p>
             <ul class="navbar-nav">
@@ -239,7 +237,7 @@
               <li>E-mail: <a href="#">nelson.baca@agrovetmarket.com</a></li>
             </ul>
           </div>
-          <div class="col-12 col-lg-4 pl-0 resume">
+          <div class="col-12 col-lg-4 pl-0 resume" data-aos="fade-up" data-aos-duration="1600">
             <h3>Veronica Campos Facundo</h3>
             <p class="cargo">Supervisor Técnico Comercial Ganadería</p>
             <ul class="navbar-nav">
@@ -251,7 +249,7 @@
           <div class="col-12 divider"></div>
 
         <!-- Item 5 -->
-        <div class="col-12 col-lg-4 resume">
+        <div class="col-12 col-lg-4 resume" data-aos="fade-up" data-aos-duration="1600">
             <h3>Willy Calderón</h3>
             <p class="cargo">Sub Gerente de Ventas</p>
             <ul class="navbar-nav">
@@ -260,7 +258,7 @@
               <li>E-mail: <a href="#">sandra.meneses@agrovetmarket.com</a></li>
             </ul>
           </div>
-          <div class="col-12 col-lg-4 pl-0 resume">
+          <div class="col-12 col-lg-4 pl-0 resume" data-aos="fade-up" data-aos-duration="1600">
             <h3>Pedro Calderón</h3>
             <p class="cargo">Jefe de Ventas Ganadería</p>
             <ul class="navbar-nav">
@@ -269,7 +267,7 @@
               <li>E-mail: <a href="#">nelson.baca@agrovetmarket.com</a></li>
             </ul>
           </div>
-          <div class="col-12 col-lg-4 pl-0 resume">
+          <div class="col-12 col-lg-4 pl-0 resume" data-aos="fade-up" data-aos-duration="1600">
             <h3>Veronica Campos Facundo</h3>
             <p class="cargo">Supervisor Técnico Comercial Ganadería</p>
             <ul class="navbar-nav">
@@ -373,7 +371,11 @@
 
   <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
   <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>    
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="js/agrovetmarket.js"></script>
 </body>
 

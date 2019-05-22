@@ -12,18 +12,8 @@
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="plugins/magic_css/magic.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
   <link rel="stylesheet" href="css/styles.css">
-  <style>
-    main {
-      margin-top: 9.4rem;
-    }
-
-    @media(max-width: 800px) {
-      main {
-        margin-top: 5rem;
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -37,49 +27,51 @@
             <li class="nav-item"><a href="#" class="nav-link">Noticias</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Catálogos</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Siguenos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Noticias</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Catálogos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Siguenos</a></li>
             <div class="divider"></div>
             <li class="nav-item"><a href="#" class="nav-link">English</a></li>
             <div class="search-form-top">
               <div class="divider"></div>
-              <li class="nav-item">
+              <li>
                 <a style="margin-top:-23px" href="#" class="nav-link btn-nav-top-search" data-action="open">
-                  <img src="images/icons/icon-lupa-small.png" alt=""></a>
-              </li>
+                <img src="images/icons/icon-lupa-small.png" alt=""></a>
+              </li>      
               <form class="form-inline">
                 <input class="form-control mr-sm-2" type="text" placeholder="¿Qué estás buscando?">
-              </form>
-            </div>
+              </form>          
+            </div>   
           </ul>
         </div>
       </nav>
     </div>
     <div class="nav-principal">
-      <nav class="navbar navbar-expand-md fixed-top navbar-light">
-        <div class="container position-relative">
-          <a class="navbar-brand logo" href="#"></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse row" id="navbarCollapse">
-
-            <form class="form-inline search-form">
-              <input class="form-control mr-sm-2" type="text" placeholder="¿Qué estás buscando?"
-                aria-label="¿Qué estás buscando?">
-              <button class="btn btn-lupa" type="submit"></button>
-            </form>
-            <div class="clear-fix"></div>
-            <ul class="navbar-nav ml-auto mt-5">
-              <li class="nav-item"><a href="#" class="nav-link">Nosotros</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Productos</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">I&D</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Distribuidores</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Contáctenos</a></li>
-            </ul>
-
+        <nav class="navbar navbar-expand-md  navbar-light">
+          <div class="container position-relative">
+              <a class="navbar-brand logo" href="#"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse row" id="navbarCollapse">    
+                <form class="form-inline search-form">
+                  <input class="form-control mr-sm-2" type="text" placeholder="¿Qué estás buscando?"
+                    aria-label="¿Qué estás buscando?">
+                  <button class="btn btn-lupa" type="submit"></button>
+                </form>
+                <div class="clear-fix"></div>
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item"><a href="#" class="nav-link">Nosotros</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Productos</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">I&D</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Distribuidores</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Contáctenos</a></li>
+                </ul>
+    
+              </div>
           </div>
-        </div>
-      </nav>
+        </nav>
     </div>
   </header>
 
@@ -87,7 +79,7 @@
 
     <div class="container">
       <div class="row resume">
-        <div class="col-12 col-lg-6 pt-5">
+        <div class="col-12 col-lg-6 pt-5" data-aos="fade-up" data-aos-duration="1500">
           <h1 class="title pt-5">Agrovet Market</h1>
           <h1 class="subtitle">Animal Health</h1>
           <br>
@@ -102,7 +94,7 @@
             medicamentos veterinarios del Perú.
           </p>
         </div>
-        <div class="col-12 col-lg-5 offset-lg-1 pl-lg-4 pr-lg-2 text-right">
+        <div class="col-12 col-lg-5 offset-lg-1 pl-lg-4 pr-lg-2 text-right" data-aos="fade-down" data-aos-duration="2000">
           <img src="images/nosostros.png" class="img-fluid" alt="">
         </div>
       </div>
@@ -114,13 +106,13 @@
           <div class="col-12 col-lg-4">
             <h1>Liderazgo de <strong>Valor</strong></h1>
           </div>
-          <div class="col-12 col-lg-4">
+          <div class="col-12 col-lg-4" data-aos="zoom-in-up" data-aos-duration="500">
             <h3>Misión</h3>
             <p>Ofrecer productos farmacéuticos y nutricionales veterinarios de clase única; desarrollados de manera
               creativa e innovadora, con estándares elevados de calidad que nos permitan una proyección internacional y
               la consolidación local a través del establecimiento formal de alianzas estratégicas.</p>
           </div>
-          <div class="col-12 col-lg-4">
+          <div class="col-12 col-lg-4" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="500">
             <h3>Visión</h3>
             <p>
               En el 2030, seremos la empresa líder del mercado de farmacéuticos para uso veterinario en Latinoamérica,
@@ -136,10 +128,10 @@
     <div class="container norms">
       <div class="row">
         <!-- row -->
-        <div class="col-12 col-lg-2 offset-lg-1 text-center">
+        <div class="col-12 col-lg-2 offset-lg-1 text-center" data-aos="fade-up" data-aos-duration="1000">
           <img src="images/iso-9001.png" class="img-fluid" alt="">
         </div>
-        <div class="col-12 col-lg-7 offset-lg-1 pl-lg-0">
+        <div class="col-12 col-lg-7 offset-lg-1 pl-lg-0" data-aos="fade-up" data-aos-duration="1000">
           <h3>Política de Calidad</h3>
           <p>
             Agrovet Market es una empresa dedicada al diseño, producción y comercialización de productos veterinarios.
@@ -151,10 +143,10 @@
       </div>
       <div class="row">
         <!-- row -->
-        <div class="col-12 col-lg-2 offset-lg-1 pt-lg-3 text-center">
+        <div class="col-12 col-lg-2 offset-lg-1 pt-lg-3 text-center" data-aos="fade-up" data-aos-duration="1000">
           <img src="images/iso-27001.png" class="img-fluid" alt="">
         </div>
-        <div class="col-12 col-lg-7 offset-lg-1 pl-lg-0">
+        <div class="col-12 col-lg-7 offset-lg-1 pl-lg-0" data-aos="fade-up" data-aos-duration="1000">
           <h3>Política de Seguridad de la información</h3>
           <p>
             Agrovet Market es una compañía basada en la investigación y desarrollo, por lo tanto, la seguridad de la
@@ -171,7 +163,7 @@
 
     <div class="jumbotron valores">
       <div class="container">
-        <div class="row">
+        <div class="row" data-aos="fade-up" data-aos-duration="1000">
           <div class="col-12 col-lg-4 py-3 d-flex flex-column justify-content-center">
             <h1>Valores de <strong>Agrovet Market</strong> Animal Health</h1>
           </div>
@@ -382,6 +374,10 @@
   <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
   <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="js/agrovetmarket.js"></script>
 </body>
 
