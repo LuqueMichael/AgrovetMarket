@@ -25,10 +25,10 @@
 
 /* Global CSS
 -------------------------------------------------- */
-body,
+/*body,
 html {
   overflow-x: hidden;
-}
+}*/
 
 a {
   color: #000;
@@ -239,7 +239,8 @@ a:focus {
   position: absolute;
   right: 3rem;
   top: 3rem;
-  transition: ease all .5s;
+  transition: ease all .2s;
+  opacity: 0;
 }
 
 .nav-top .search-form-top .form-inline input {
@@ -254,6 +255,11 @@ a:focus {
   transition: ease .2s all;
 }
 
+.nav-top .search-form-top .form-inline.show {
+  top: 0 !important;
+  opacity: 1;
+}
+
 /*-- Nav principal */
 .nav-principal {
   font-family: 'helvetica-light', Arial, Helvetica, sans-serif;
@@ -261,7 +267,7 @@ a:focus {
   width: 100%;
   height: 154px;
   top: 2.2rem;
-  z-index: 9999;
+  z-index: 1040;
   background: #fff;
   position: sticky;
   box-shadow: 0 0 5px #c1c1c1;  
@@ -290,6 +296,7 @@ a:focus {
   opacity: 0;
   z-index: -1;
 }
+.nav-principal.small .megamenu { margin-top: -3px; }
 .nav-top.no-items .navbar-nav .nav-item { display: none; }
 @keyframes slideToLeft {
   0% { transform: translateX(-6rem); opacity: 0; }
@@ -321,7 +328,7 @@ a:focus {
   position: relative;
 }
 
-.nav-principal ul li a::after {
+.nav-principal ul li a::after{
   content: "";
   position: absolute;
   width: 0;
@@ -330,12 +337,51 @@ a:focus {
   bottom: 0;
   background: #333333;
   transition: ease all .4s;
+  border: 0 !important;
 }
 
-.nav-principal ul li a:hover::after {
+.nav-principal ul li a:hover::after,
+.nav-principal ul li a.active::after {
   width: 84%;
   transition: ease all .3s;
 }
+
+.nav-principal .megamenu-li {
+	position: static;
+}
+
+.nav-principal .megamenu {
+  position: absolute;
+  width: 101%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  margin-top: 9px;
+  background-color: #efefef;
+  box-shadow: inset 1px 3px 12px 0px #e0e0e0;
+  border-radius: 0 !important;
+}
+/* .nav-principal .megamenu */
+.nav-principal .megamenu h5{ font-size: 0.95rem ; margin: 2rem 0 1.7rem;}
+.nav-principal .megamenu .nav { display: inline-block;    margin-right: 2rem; }
+.nav-principal .megamenu .nav-item{ padding: 0 !important ;}
+.nav-principal .megamenu .nav-link { width: fit-content; font-size: 0.8rem; color: #000000; padding: 0 0 5px 0; margin-bottom: 10px }
+.nav-principal .megamenu .nav-link::after { left: 0; }
+.nav-principal .megamenu .nav-link:hover::after { width: 100%; }
+.nav-principal .megamenu .nav-link:hover { color: #333333 }
+.nav-principal .megamenu .col::after { 
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 88%;
+  top: 1.95rem;
+  right: 7%;
+  background-color: #939292;
+}
+.nav-principal .megamenu .col:last-child::after { width: 0; }
+
 
 @media(max-width: 800px) {
   .nav-principal #navbarCollapse {
@@ -1329,6 +1375,9 @@ i.chev-r {
 }
 
 #filters button.btn-filters {
+  max-width: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis;
   height: 31px;
   border: 1px solid #d8d8d8;
   background: #fff;
@@ -1339,15 +1388,30 @@ i.chev-r {
   padding-right: 2rem;
   padding-bottom: 2px;
 }
+#filters button.btn-filters.active{
+  border: 1px solid #9d7d3f;
+  color: #7b622f!important;
+}
+#filters .btn-filters.dropdown-toggle::after{
+  position: absolute;
+  right: 1rem;
+  top: 11px;
+}
 
 #filters .dropdown-menu.show {
   border-radius: 0;
-  width: 100%;
+  width: auto;
 }
 
 #filters a.dropdown-item {
   font-size: .8rem;
   color: #4e4e4e;
+}
+#filters a.dropdown-item:active,
+#filters a.dropdown-item:focus{
+  color: #fff;
+  text-decoration: none;
+  background-color: #86693c;
 }
 
 .articles {
@@ -1846,11 +1910,13 @@ i.chev-r {
   border: 1px solid #AFB0AB;
   border-radius: 0;
   margin-right: 35px;
+  margin-bottom: .5rem;
   padding: 3px 15px;
   font-size: 0.87rem;
 }
 
-.noticias-page .btn-tag:hover {
+.noticias-page .btn-tag:hover,
+.noticias-page .btn-tag:active {
   background: rgb(202, 202, 199);
 }
 
@@ -2384,6 +2450,36 @@ h1.title {
 .producto-detalle .lista-productos {
   margin-top: 7rem;
 }
+
+.producto-detalle .submenu .bubble{border:1px solid #ccc;background:#fff;width:135px;height:45px;border-radius:5px;position:absolute;top:-2rem;left:1.8rem;padding-top:4px;padding-left:6px;opacity:0;transition:ease all .3s;}
+.producto-detalle .submenu .bubble.show{opacity:1;top:-3.4rem;}
+.producto-detalle .submenu .bubble::before{content:"";position:absolute;bottom:-8px;left:13px;width:0;height:0;border-width:7px 6px 0;border-style:solid;border-color:#ccc transparent transparent;}
+.producto-detalle .submenu .bubble::after{content:"";position:absolute;bottom:-7px;left:15px;width:0;height:0;border-width:7px 4px 0;border-style:solid;border-color:#fff transparent transparent;}
+.social{width:36px;height:36px;display:inline-block;transition:linear all .2s;background-repeat:no-repeat;background-position:center;}
+.social.twitter{background-image:url(../images/icons/icon-twitter-inverse.png);}
+.social.twitter:hover{background-image:url(../images/icons/icon-twitter-inverse.png); opacity: .8;}
+.social.fb{background-image:url(../images/icons/icon-fb-inverse.png);}
+.social.fb:hover{background-image:url(../images/icons/icon-fb-inverse.png);opacity: .8;}
+.social.wsp{background-image:url(../images/icons/icon-ws-inverse.png);}
+.social.wsp:hover{background-image:url(../images/icons/icon-ws-inverse.png);opacity: .8;}
+#video-modal .modal-body{position:relative;padding:0;background:#000;}
+#video-modal .modal-dialog{max-width:800px;margin:20vh auto;}
+#video-modal.fade-scale{transform:scale(0);opacity:0;-webkit-transition:all .25s linear;-o-transition:all .25s linear;transition:all .25s linear;overflow:hidden;}
+#video-modal.fade-scale.show{opacity:1;transform:scale(1);}
+#video-modal .close {
+  position: absolute;
+  right: -30px;
+  top: 0;
+  z-index: 999;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fff;
+  opacity: 1;
+}
+/* VIDEO SLIDER BACKGROUND */
+.video-overlay{position:absolute;top:0;left:0;bottom:0;right:0;pointer-events:none;background:url(../media/video_preview.png) left top repeat;opacity:0;}
+.overlay-slid{position:absolute;width:150%;height:100%;background:rgba(72,61,49,0.25);z-index:1;left:-5rem;opacity:1;transition:linear all .68s;transform:skewX(-10deg);}
+.overlay-slide-h{left:-160%!important;transition:linear all .48s;}
 
 @media(max-width: 800px) {
   .producto-detalle ul.nav li a.nav-link {

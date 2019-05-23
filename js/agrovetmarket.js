@@ -1,7 +1,7 @@
 var cProducComparacion = 0;
 
 $(function () {
-  
+
   /* Carousel marcas
   *****************************************************/
   $('#carousel-marcas').carousel();
@@ -15,6 +15,31 @@ $(function () {
     toggleSliderControls($('#carousel-marcas'));
     return false;
   });
+
+  $(".megamenu").on("click", function (e) {
+    e.stopPropagation();
+  });
+
+  $('.share-buttons').on('click', function (e) {
+    e.preventDefault();
+    var $elem = $(this).parent().find('.bubble');
+    if ($elem.hasClass('show')) {
+      $elem.removeClass('show');
+      setTimeout(function () {
+        $elem.hide()
+      }, 500);
+    } else {
+      $elem.show();
+      $elem.addClass('show');
+    }
+  });
+  $('#video-modal').on('shown.bs.modal', function (e) {
+    console.log($(this).data("src"));
+    $("#video").attr('src', $("#video-btn").data("src") + "?rel=0&amp;showinfo=0&amp;modestbranding=1&amp;autoplay=1");
+  })
+  $('#video-modal').on('hide.bs.modal', function (e) {
+      $("#video").attr('src', $("#video-btn").data("src"));
+  })
 
   /* Carousel noticias 1
   *****************************************************/
@@ -59,7 +84,7 @@ $(function () {
     $(window).scroll(function () {
       var $nav = $('.nav-principal');
       if ($(window).scrollTop() > 30) {
-        $nav.addClass('small');        
+        $nav.addClass('small');
         /*$nav.find('.navbar-nav').removeClass('mt-5').css('margin-top', '-15px');*/
         $('.nav-top').addClass('small');
         /*$('#carousel-principal.carousel').addClass('small');*/
@@ -70,7 +95,7 @@ $(function () {
         /*$nav.find('.navbar-nav').addClass('mt-5');*/
         $nav.find('.navbar-nav').removeAttr('style');
         $('#carousel-principal.carousel').removeClass('small');
-        
+
         //reset search-top-nav
         $('.search-form-top').find('form').removeAttr('style');
         $('.search-form-top').find('img').attr('src', 'images/icons/icon-lupa-small.png');
@@ -94,8 +119,9 @@ $(function () {
   $('.btn-nav-top-search').on('click', function (e) {
     e.preventDefault();
     if ($(this).attr('data-action') == 'open') {
+      $('.nav-top .form-inline').addClass('show');
       //hidden nav-items
-      $(this).closest('.nav-top').addClass('no-items')
+      $(this).closest('.nav-top').addClass('no-items');
       //change icon
       $(this).find('img').attr('src', 'images/icons/icon-lupa-small-close.png');
       //show input 
@@ -105,6 +131,7 @@ $(function () {
       //change action state button
       $(this).attr('data-action', 'close')
     } else {
+      $('.nav-top .form-inline').removeClass('show');
       //hidden nav-items
       $(this).closest('.nav-top').removeClass('no-items')
       //change icon
@@ -120,8 +147,8 @@ $(function () {
 
   /* Verificar check min-2 / max-3 productos en lista de productos
   *****************************************************************/
-  $('.lista-productos').find('.customcheck').on('click','input[type="checkbox"]',function(){
-    createPopCheck(this,'.post');
+  $('.lista-productos').find('.customcheck').on('click', 'input[type="checkbox"]', function () {
+    createPopCheck(this, '.post');
   });
 
   /* Ripple effect
@@ -167,22 +194,22 @@ function isMobileDevice() {
 };
 
 
-function createPopCheck(context,parent) {
+function createPopCheck(context, parent) {
   cProducComparacion++;
   $('.popcheck').remove();
-  if( cProducComparacion === 1){
+  if (cProducComparacion === 1) {
     var $context = $(context);
-    var element = '<div class="popcheck"><p> <a href="#" onclick="closePopCheck(this)" class="btn-close"></a></p><p class="head"><strong>Agrovet Market</strong> Animal Health</p><p>Usted debe comparar al menos 2 productos Solo puede comparar 3 productos a la vez</p></div>';  
+    var element = '<div class="popcheck"><p> <a href="#" onclick="closePopCheck(this)" class="btn-close"></a></p><p class="head"><strong>Agrovet Market</strong> Animal Health</p><p>Usted debe comparar al menos 2 productos Solo puede comparar 3 productos a la vez</p></div>';
     $context.closest(parent).prepend(element);
-  }else if ( cProducComparacion === 3 ){
+  } else if (cProducComparacion === 3) {
     var $context = $(context);
-    var element = '<div class="popcheck"><p> <a href="#" onclick="closePopCheck(this)" class="btn-close"></a></p><p class="head"><strong>Agrovet Market</strong> Animal Health</p><p>Usted debe comparar al menos 2 productos Solo puede comparar 3 productos a la vez</p></div>';  
+    var element = '<div class="popcheck"><p> <a href="#" onclick="closePopCheck(this)" class="btn-close"></a></p><p class="head"><strong>Agrovet Market</strong> Animal Health</p><p>Usted debe comparar al menos 2 productos Solo puede comparar 3 productos a la vez</p></div>';
     $context.closest(parent).prepend(element);
-  }else{
-    
+  } else {
+
   }
 }
-function closePopCheck(context){  
+function closePopCheck(context) {
   event.preventDefault();
   $(context).closest('.post').find(".popcheck").remove();
 }
