@@ -29,6 +29,13 @@ $(function () {
   $('.toggle-icon').click(function () {
     $(this).toggleClass('open');
   });
+  $(".customcheck input").click(function(){
+    ($(this).prop('checked')) ? $(this).closest('.checkarea').find('.compareButton').addClass('show') : $(this).closest('.checkarea').find('.compareButton').removeClass('show') ;
+  });
+  $(".btn-close").click(function(e){
+    e.preventDefault();
+    ($(this).closest('.popcheck').hasClass('show')) ? $(this).closest('.popcheck').removeClass('show') : $(this).closest('.popcheck').addClass('show') ;
+  });
 
    /* Responsive
   *****************************************************/
@@ -224,25 +231,4 @@ function toggleSliderControls($context) {
 function isMobileDevice() {
   return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
 };
-
-
-function createPopCheck(context, parent) {
-  cProducComparacion++;
-  $('.popcheck').remove();
-  if (cProducComparacion === 1) {
-    var $context = $(context);
-    var element = '<div class="popcheck"><p> <a href="#" onclick="closePopCheck(this)" class="btn-close"></a></p><p class="head"><strong>Agrovet Market</strong> Animal Health</p><p>Usted debe comparar al menos 2 productos Solo puede comparar 3 productos a la vez</p></div>';
-    $context.closest(parent).prepend(element);
-  } else if (cProducComparacion === 3) {
-    var $context = $(context);
-    var element = '<div class="popcheck"><p> <a href="#" onclick="closePopCheck(this)" class="btn-close"></a></p><p class="head"><strong>Agrovet Market</strong> Animal Health</p><p>Usted debe comparar al menos 2 productos Solo puede comparar 3 productos a la vez</p></div>';
-    $context.closest(parent).prepend(element);
-  } else {
-
-  }
-}
-function closePopCheck(context) {
-  event.preventDefault();
-  $(context).closest('.post').find(".popcheck").remove();
-}
 

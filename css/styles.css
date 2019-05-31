@@ -72,6 +72,14 @@ a:focus {
   color: #454545;
 }
 
+.btn {
+  border-radius: 0;
+}
+
+.btn-sm {
+  padding: 5px 10px !important;
+}
+
 .btn-up {
   background: url('../images/icons/icon-up.png') no-repeat;
   padding: 13px;
@@ -88,6 +96,11 @@ a:focus {
   border-radius: 0;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.btn-black:hover {
+  color: #fff;
+  background: #404040;
 }
 
 .heading-page {
@@ -604,23 +617,34 @@ a:focus {
   .nav-principal {
     top: 0;
   }
-  .nav-principal.small .logo { width: 12rem !important; background-size: contain; }
-  .nav-principal.small .scroll{ overflow: auto; }
-  .nav-principal.small .no-scroll { overflow: hidden; }
-  .nav-principal.small .navbar.navbar-light { 
+
+  .nav-principal.small .logo {
+    width: 12rem !important;
+    background-size: contain;
+  }
+
+  .nav-principal.small .scroll {
+    overflow: auto;
+  }
+
+  .nav-principal.small .no-scroll {
+    overflow: hidden;
+  }
+
+  .nav-principal.small .navbar.navbar-light {
     max-height: 100vh;
     overflow-y: auto;
     position: unset;
     display: block;
     padding-bottom: 0;
     z-index: 99999;
-   }
+  }
 
   .nav-principal #navbarCollapse {
     margin-left: -16px !important;
     margin-right: -16px !important;
     margin-top: .4rem;
-    
+
   }
 
   .nav-principal .search-form-top {
@@ -637,10 +661,11 @@ a:focus {
     border: 0;
     border-bottom: 1px solid #464646;
   }
-  .nav-principal .search-form-top input.form-control:focus {    
+
+  .nav-principal .search-form-top input.form-control:focus {
     border: 0;
     border-bottom: 1px solid #7b622f;
-    box-shadow: none !important;    
+    box-shadow: none !important;
   }
 
   .nav-principal .search-form-top .btn-nav-top-search {
@@ -695,7 +720,8 @@ a:focus {
     width: 16px;
     height: 25px;
   }
-  .nav-principal .nav-item.show .dropdown-toggle:before{
+
+  .nav-principal .nav-item.show .dropdown-toggle:before {
     transform: rotate(90deg) translateY(3px);
   }
 
@@ -783,40 +809,57 @@ a:focus {
     justify-content: center;
     margin-bottom: 2rem;
   }
-  @media(max-width: 800px){
-    .footer .copyright{ padding: 0 !important;  } 
+
+  @media(max-width: 800px) {
+    .footer .copyright {
+      padding: 0 !important;
+    }
 
   }
+
   /*-- Megamenu */
- 
-  .nav-principal .dropdown-menu{
+
+  .nav-principal .dropdown-menu {
     width: 130%;
-    margin-left: -40px !important;    
+    margin-left: -40px !important;
     box-shadow: inset 0 0 5px #000;
   }
-  .nav-principal .dropdown-menu { padding: 2.1rem; margin: 0 } 
-  .nav-principal .dropdown-menu.megamenu{ padding: 0 2.1rem; }
+
+  .nav-principal .dropdown-menu {
+    padding: 2.1rem;
+    margin: 0
+  }
+
+  .nav-principal .dropdown-menu.megamenu {
+    padding: 0 2.1rem;
+  }
+
   .dropdown-menu.megamenu.show {
     position: unset;
     margin: 0;
   }
+
   .nav-principal .megamenu .col::after {
     width: 0;
-}
-.nav-principal .megamenu .nav {
-  display: block;
-  margin: 0;
-}
-.nav-principal .megamenu .col-12{
-  padding: 0;
-}
-.nav-principal .megamenu .nav-item{
-  margin: 0;
-}
-.nav-principal .megamenu .nav-link{
-  padding: .5rem 0rem;
-  margin: 0;
-}
+  }
+
+  .nav-principal .megamenu .nav {
+    display: block;
+    margin: 0;
+  }
+
+  .nav-principal .megamenu .col-12 {
+    padding: 0;
+  }
+
+  .nav-principal .megamenu .nav-item {
+    margin: 0;
+  }
+
+  .nav-principal .megamenu .nav-link {
+    padding: .5rem 0rem;
+    margin: 0;
+  }
 
 
   /*-- Navtop */
@@ -2452,6 +2495,29 @@ i.chev-r {
   visibility: visible
 }
 
+.lista-productos .compareButton {
+  padding: .1rem 1.5rem;
+  font-size: .9rem;
+  background: #9d7d3f;
+  border-bottom: 1px solid #8e7036;
+  color: #fff;
+  box-shadow: 1px 3px 5px #dad0bc;
+  position: absolute;
+  z-index: 9;
+  font-family: helvetica-light;
+  transform: translateX(-9rem);
+  transition: ease all .3s;
+}
+
+.lista-productos .compareButton:hover,
+.lista-productos .compareButton:active {
+  padding: .1rem 3rem;
+}
+
+.lista-productos .compareButton.show {
+  transform: translateX(0rem);
+}
+
 .card-body .info-hover {
   padding-left: 1rem;
   visibility: hidden;
@@ -2601,6 +2667,18 @@ h1.title {
   border: 1px solid #aeadab;
   font-size: 14px;
   position: absolute;
+  margin: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  transition: ease all .1s;
+  z-index: -1;
+  opacity: 0;
+  transform: translateY(-5rem);
+}
+.lista-productos .popcheck.show {
+  opacity: 1;
+  transform: translateY(0rem);
   z-index: 99;
 }
 
