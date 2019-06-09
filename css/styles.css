@@ -1254,6 +1254,7 @@ a:focus {
 #contactenos .mapa {
   overflow: hidden;
   margin-bottom: 2rem;
+  height: 390px !important;
 }
 
 #contactenos .icon_direc {
@@ -3084,6 +3085,26 @@ h1.title {
 .oficinas .heading-page p {
   font-size: 1em;
   font-family: 'helvetica-roman';
+}
+
+/* Google Maps
+-------------------------------------------------- */
+.googleMapPopup {
+  max-width: 300px;
+}
+.googleMapPopup h1{
+  text-align: center;
+  font-size: 1.2rem !important;
+  margin: 1rem 0 !important;
+}
+.googleMapPopup .bodyContent p:first-child {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: .9rem;
+}
+.googleMapPopup .bodyContent p {
+  margin: .5rem 0;
 }
 
 /* Utilities

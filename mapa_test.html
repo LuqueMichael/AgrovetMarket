@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <title>Marker Clustering</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    #map {
+      height: 100%;
+    }
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="map"></div>
+
+  <script src="js/dataMarkerclusterer.js"></script>
+  <script src="js/markerclusterer.js"></script>
+  <script>
+
+    function initMap() {
+      //init map
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 4,
+        center: { lat: -11.6235958, lng: -81.2250248 }
+      });
+
+      //template popup info in map
+      var templateString = '<div class="googleMapPopup"><h1>:name:</h1><div class="bodyContent"><p>:address:</p>' +
+        '<p><b>Teléfono:</b> :phone:</p><p><b>Email:</b> :mail:<p><b>Contacto:</b> :contact:</p></div></div>';
+
+      var markers = dataMarker['data'].map(function (item, i) {
+        //create marker
+        var marker = new google.maps.Marker({
+          position: { lat: item['lat'], lng: item['lng'] },
+          title: item['name']
+        });
+        //create popup info
+        templateStringM = templateString.replace(':name:',item['name'])
+                                        .replace(':address:',item['address'])
+                                        .replace(':phone:',item['phone'])
+                                        .replace(':mail:',item['mail'])
+                                        .replace(':contact:',item['contact']);                                        
+        var infowindow = new google.maps.InfoWindow({content: templateStringM});
+        //add popup info
+        marker.addListener('click', function () {
+          infowindow.open(map, marker);
+        });
+        return marker;
+      });
+      var markerCluster = new MarkerClusterer(map, markers,
+        { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
+    }
+
+  </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_9B0LahHyM0PpEYIabDBkr0NfRmthU2s&callback=initMap">
+    </script>
+</body>
+
+</html>
