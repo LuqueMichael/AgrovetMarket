@@ -38,10 +38,10 @@
       var templateString = '<div class="googleMapPopup"><h1>:name:</h1><div class="bodyContent"><p>:address:</p>' +
         '<p><b>Teléfono:</b> :phone:</p><p><b>Email:</b> :mail:<p><b>Contacto:</b> :contact:</p></div></div>';
 
-      var markers = dataMarker['data'].map(function (item, i) {
+      var markers = dataMarker['data'].map(function (item, i) {         
         //create marker
         var marker = new google.maps.Marker({
-          position: { lat: item['lat'], lng: item['lng'] },
+          position: { lat: parseFloat(item['lat']), lng: parseFloat(item['lng']) },
           title: item['name']
         });
         //create popup info
@@ -63,7 +63,7 @@
 
   </script>
   <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_9B0LahHyM0PpEYIabDBkr0NfRmthU2s&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC52jQWf3oYXtwSoD5rO7Sb9u-r6efkOs4&callback=initMap">
     </script>
 </body>
 
