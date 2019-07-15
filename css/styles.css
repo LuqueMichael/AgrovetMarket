@@ -1748,6 +1748,7 @@ i.chev-r {
     width: 100% !important;
   }
 }
+@media(min-width: 1920px) { #map .full-right { width: 57% } }
 
 /* Investigacion y desarrollo
 -------------------------------------------------- */
