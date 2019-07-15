@@ -86,7 +86,7 @@ $(function () {
 
   /* Carousel noticias 1
   *****************************************************/
-  $('#carousel-noticias').carousel();
+  $('#carousel-noticias-1').carousel();
   $('.noticias-1 .next').click(function () {
     $('#carousel-noticias-1').carousel('next');
     toggleSliderControls($('#carousel-noticias-1'));
@@ -100,7 +100,7 @@ $(function () {
 
   /* Carousel noticias 2
   *****************************************************/
-  $('#carousel-noticias').carousel();
+  $('#carousel-noticias-2').carousel();
   $('.noticias-2 .next').click(function () {
     $('#carousel-noticias-2').carousel('next');
     toggleSliderControls($('#carousel-noticias-2'));
@@ -125,22 +125,19 @@ $(function () {
     $(window).scroll(function () {
       var $nav = $('.nav-principal');
       if ($(window).scrollTop() > 30) {
-        $nav.addClass('small');
+        $nav.addClass('small');        
         /*$nav.find('.navbar-nav').removeClass('mt-5').css('margin-top', '-15px');*/
         $('.nav-top').addClass('small');
         /*$('#carousel-principal.carousel').addClass('small');*/
       } else {
-        $nav.removeClass('small');
-        $('.nav-top').removeClass('small').removeClass('no-items');
-
-        /*$nav.find('.navbar-nav').addClass('mt-5');*/
+        $nav.removeClass('small');        
+        $('.nav-top').removeClass('small').removeClass('no-items');        
         $nav.find('.navbar-nav').removeAttr('style');
         $('#carousel-principal.carousel').removeClass('small');
-
         //reset search-top-nav
         $('.search-form-top').find('form').removeAttr('style');
         $('.search-form-top').find('img').attr('src', 'images/icons/icon-lupa-small.png');
-        $('.search-form-top').find('.btn-nav-top-search').attr('data-action', 'open')
+        //$('.search-form-top').find('.btn-nav-top-search').attr('data-action', 'open')
       }
     });
   } else {
@@ -155,31 +152,31 @@ $(function () {
 
   /* Header top search small
   *****************************************************/
-  $('.btn-nav-top-search').on('click', function (e) {
+  $('.btn-nav-top-search').on('click', function (e) {    
     e.preventDefault();
     if ($(this).attr('data-action') == 'open') {
       $('.nav-top .form-inline').addClass('show');
       //hidden nav-items
       $(this).closest('.nav-top').addClass('no-items');
       //change icon
-      $(this).find('img').attr('src', 'images/icons/icon-lupa-small-close.png');
+      //$(this).find('img').attr('src', 'images/icons/icon-lupa-small-close.png');
       //show input 
       var $item = $(this).parent().next();
       $item.css('top', '0');
       $item.find('input').focus();
       //change action state button
-      $(this).attr('data-action', 'close')
+      //$(this).attr('data-action', 'close')
     } else {
       $('.nav-top .form-inline').removeClass('show');
       //hidden nav-items
       $(this).closest('.nav-top').removeClass('no-items')
       //change icon
-      $(this).find('img').attr('src', 'images/icons/icon-lupa-small.png');
+      //$(this).find('img').attr('src', 'images/icons/icon-lupa-small.png');
       //hide input 
       var $item = $(this).parent().next();
       $item.removeAttr('style')
       //change action state button
-      $(this).attr('data-action', 'open')
+      //$(this).attr('data-action', 'open')
     }
 
   });

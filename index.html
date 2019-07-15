@@ -38,6 +38,10 @@
               </li>
               <form class="form-inline">
                 <input class="form-control mr-sm-2" type="text" placeholder="¿Qué estás buscando?">
+                <div class="actions">
+                  <button type="submit" class="btn btn-submit"></button>|
+                  <button type="submit" class="btn btn-cancel btn-nav-top-search" data-action="close"></button>
+                </div>
               </form>
             </div>
           </ul>
@@ -54,28 +58,30 @@
       </div>
       <nav class="navbar navbar-expand-lg  navbar-light">
         <div class="container">
-          <a class="navbar-brand logo" href="#"></a>          
+          <div class="logo-animation">
+            <a class="navbar-brand logo" href="#"></a>
+          </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <div class="toggle-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </button>
           <div class="collapse navbar-collapse row" id="navbarCollapse">
             <div class="clear-fix"></div>
             <ul class="navbar-nav ml-auto pr">
               <li class="nav-item position-relative">
                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Nosotros</a>
-                <div class="dropdown-menu">                  
-                    <a href="#" class="dropdown-item">Sobre Agrovet Market</a>
-                    <a href="#" class="dropdown-item">Directorio de contacto</a>
-                    <a href="#" class="dropdown-item">Aseguramiento de la calidad</a>
-                    <a href="#" class="dropdown-item">Trabaja con nosotros</a>                  
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">Sobre Agrovet Market</a>
+                  <a href="#" class="dropdown-item">Directorio de contacto</a>
+                  <a href="#" class="dropdown-item">Aseguramiento de la calidad</a>
+                  <a href="#" class="dropdown-item">Trabaja con nosotros</a>
                 </div>
               </li>
               <li class="nav-item">
@@ -83,7 +89,7 @@
                 <div class="dropdown-menu megamenu">
                   <div class="container">
                     <div class="row">
-                      <div class="col-12 col-sm-6 col-lg-2 offset-lg-2">
+                      <div class="col-12 col-sm-6 col-lg-2 offset-lg-1">
                         <h5>POR LÍNEAS</h5>
                         <div class="d-flex flex-nowarp">
                           <ul class="nav flex-column">
@@ -95,59 +101,58 @@
                       </div>
                       <div class="col-12 col-sm-6 col-lg-4">
                         <h5>POR CATEGORÍA COMERCIAL</h5>
-                        <div class="d-flex flex-nowrap">
-                          <ul class="order-1 nav ">
-                            <li class="nav-item"><a href="#" class="nav-link">Antibióticos</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Suplementos inyectables</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Antiparasitarios</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Anabólicos</a></li>
-                          </ul>
-                          <ul class="order-2 nav ">
-                            <li class="nav-item"><a href="#" class="nav-link">Antiinflamatorios</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Hormonales</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Anéstesicos</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Nutricionales</a></li>
-                          </ul>
-                          <ul class="order-3 nav mr-0">
-                            <li class="nav-item"><a href="#" class="nav-link">Otros1</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Otros</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Otros</a></li>
-                          </ul>
-                        </div>                        
+                        <ul class="order-1 nav ">
+                          <li class="nav-item"><a href="#" class="nav-link">Antibióticos</a></li>
+                          <li class="nav-item"><a href="#" class="nav-link">Suplementos inyectables</a></li>
+                          <li class="nav-item"><a href="#" class="nav-link">Antiparasitarios</a></li>
+                          <li class="nav-item"><a href="#" class="nav-link">Anabólicos</a></li>
+
+                          <li class="nav-item"><a href="#" class="nav-link">Antiinflamatorios</a></li>
+                          <li class="nav-item"><a href="#" class="nav-link">Hormonales</a></li>
+                          <li class="nav-item"><a href="#" class="nav-link">Anéstesicos</a></li>
+                          <li class="nav-item"><a href="#" class="nav-link">Nutricionales</a></li>
+
+                          <li class="nav-item"><a href="#" class="nav-link">Otros1</a></li>
+                          <li class="nav-item"><a href="#" class="nav-link">Otros</a></li>
+                          <li class="nav-item"><a href="#" class="nav-link">Otros</a></li>
+                        </ul>
+
                       </div>
                       <div class="col-12 col-sm-6 col-lg-4">
                         <h5>POR ESPECIES</h5>
-                        <div class="d-flex flex-nowarp">
-                          <ul class="nav flex-column">
-                            <li class="nav-item"><a href="#" class="nav-link">Aves de combate</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Aves de corral</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Camélidos</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Caninos</a></li>
-                          </ul>
-                          <ul class="nav flex-column">
-                            <li class="nav-item"><a href="#" class="nav-link">Caprinos</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Conejos</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Equinos</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Felinos</a></li>
-                          </ul>
-                          <ul class="nav flex-column mr-0">
-                            <li class="nav-item"><a href="#" class="nav-link">Ovinos</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Peces</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Porcinos</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Vacunos</a></li>
-                          </ul>
-                        </div>
+                        <ul class="nav flex-column">
+                          <li class="nav-item"><a href="#" class="nav-link">Aves de combate</a></li>
+                          <li class="nav-item"><a href="#" class="nav-link">Aves de corral</a></li>
+                          <li class="nav-item"><a href="#" class="nav-link">Camélidos</a></li>
+                          <li class="nav-item"><a href="#" class="nav-link">Caninos</a></li>
+
+                          <li class="nav-item"><a href="#" class="nav-link">Caprinos</a></li>
+                          <li class="nav-item"><a href="#" class="nav-link">Conejos</a></li>
+                          <li class="nav-item"><a href="#" class="nav-link">Equinos</a></li>
+                          <li class="nav-item"><a href="#" class="nav-link">Felinos</a></li>
+
+                          <li class="nav-item"><a href="#" class="nav-link">Ovinos</a></li>
+                          <li class="nav-item"><a href="#" class="nav-link">Peces</a></li>
+                          <li class="nav-item"><a href="#" class="nav-link">Porcinos</a></li>
+                          <li class="nav-item"><a href="#" class="nav-link">Vacunos</a></li>
+                        </ul>
+
                       </div>
+                    </div>
+                  </div>
+                  <div class="megamenu-foot">
+                    <div class="container text-right">
+                      Agrovet Market Animal Health | Productos Veterinarios de Clase Única
                     </div>
                   </div>
                 </div>
               </li>
               <li class="nav-item position-relative">
                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">I&D</a>
-                <div class="dropdown-menu">                  
-                    <a href="#" class="dropdown-item">Artículo técnico</a>
-                    <a href="#" class="dropdown-item">Evaluación de campo</a>
-                    <a href="#" class="dropdown-item">Investigación</a>                
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">Artículo técnico</a>
+                  <a href="#" class="dropdown-item">Evaluación de campo</a>
+                  <a href="#" class="dropdown-item">Investigación</a>
                 </div>
               </li>
               <li class="nav-item"><a href="#" class="nav-link">Distribuidores</a></li>
@@ -375,7 +380,8 @@
         <h1 class="title pb-4">Noticias e Investigaciones</h1>
 
         <div class="noticias-1 pb-2">
-          <div id="carousel-noticias-1" class="carousel-noticias carousel slide my-5 py-1 text-left">
+          <div id="carousel-noticias-1" class="carousel-noticias carousel slide my-5 py-1 text-left"
+            data-ride="carousel">
             <div class="carousel-inner position-relative" role="listbox">
               <!-- Carousel Item-->
               <div class="carousel-item row active">
@@ -498,7 +504,8 @@
         </div>
 
         <div class="noticias-2">
-          <div id="carousel-noticias-2" class="carousel-noticias carousel slide my-5 py-1 text-left">
+          <div id="carousel-noticias-2" class="carousel-noticias carousel slide my-5 py-1 text-left"
+            data-ride="carousel">
             <div class="carousel-inner position-relative" role="listbox">
               <!-- Carousel Item-->
               <div class="carousel-item row active">
