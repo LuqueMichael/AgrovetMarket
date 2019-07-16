@@ -13,7 +13,7 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="plugins/magic_css/magic.min.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+<link rel="stylesheet" href="css/eliminar.css">
   <link rel="stylesheet" href="css/styles.css">
 
 </head>
@@ -21,138 +21,156 @@
 <body>
   <!-- TOP NAV FIXED -->
   <header>
-    <div class="nav-top">
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-black p-0">
-        <div class="container">
-          <ul class="navbar-nav ml-auto position-relative sc">
-            <li class="nav-item"><a href="#" class="nav-link">Oficinas Regionales</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Noticias</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Catálogos</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Siguenos</a></li>
-            <div class="divider"></div>
-            <li class="nav-item"><a href="#" class="nav-link">English</a></li>
-            <div class="search-form-top">
+      <div class="nav-top">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-black p-0">
+          <div class="container">
+            <ul class="navbar-nav ml-auto position-relative sc">
+              <li class="nav-item"><a href="#" class="nav-link">Oficinas Regionales</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Noticias</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Catálogos</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Siguenos</a></li>
               <div class="divider"></div>
-              <li>
-                <a style="margin-top:-23px" href="#" class="nav-link btn-nav-top-search" data-action="open">
-                  <img src="images/icons/icon-lupa-small.png" alt=""></a>
-              </li>
-              <form class="form-inline">
-                <input class="form-control mr-sm-2" type="text" placeholder="¿Qué estás buscando?">
-              </form>
-            </div>
-          </ul>
-        </div>
-      </nav>
-    </div>
-    <div class="nav-principal">
-      <div class="container position-relative">
-        <form class="form-inline search-form">
-          <input class="form-control mr-sm-2" type="text" placeholder="¿Qué estás buscando?"
-            aria-label="¿Qué estás buscando?">
-          <button class="btn btn-lupa" type="submit"></button>
-        </form>
+              <li class="nav-item"><a href="#" class="nav-link">English</a></li>
+              <div class="search-form-top">
+                <div class="divider"></div>
+                <li>
+                  <a style="margin-top:-23px" href="#" class="nav-link btn-nav-top-search" data-action="open">
+                    <img src="images/icons/icon-lupa-small.png" alt=""></a>
+                </li>
+                <form class="form-inline">
+                  <input class="form-control mr-sm-2" type="text" placeholder="¿Qué estás buscando?">
+                  <div class="actions">
+                    <button type="submit" class="btn btn-submit"></button>|
+                    <button type="submit" class="btn btn-cancel btn-nav-top-search" data-action="close"></button>
+                  </div>
+                </form>
+              </div>
+            </ul>
+          </div>
+        </nav>
       </div>
-      <nav class="navbar navbar-expand-md  navbar-light">
-        <div class="container">
-          <a class="navbar-brand logo" href="#"></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <div class="toggle-icon">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
+      <div class="nav-principal">
+        <div class="container position-relative">
+          <form class="form-inline search-form">
+            <input class="form-control mr-sm-2" type="text" placeholder="¿Qué estás buscando?"
+              aria-label="¿Qué estás buscando?">
+            <button class="btn btn-lupa" type="submit"></button>
+            <div class="sugg-box list-group-container">
+              <ul id="search-box-sug" class="list-group">
+                <li class="list-group-item"><a href="#">Esto es un producto PSD de varias lineas que deberia poder
+                    cortarse</a></li>
+                <li class="list-group-item"><a href="#">Sin sugerencias</a></li>
+                <li class="list-group-item"><a href="#">Sin sugerencias</a></li>
+              </ul>
             </div>
-          </button>
-          <div class="collapse navbar-collapse row" id="navbarCollapse">
-            <div class="clear-fix"></div>
-            <ul class="navbar-nav ml-auto pr">
-              <li class="nav-item position-relative">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Nosotros</a>
-                <div class="dropdown-menu">
-                  <a href="#" class="dropdown-item">Sobre Agrovet Market</a>
-                  <a href="#" class="dropdown-item">Directorio de contacto</a>
-                  <a href="#" class="dropdown-item">Aseguramiento de la calidad</a>
-                  <a href="#" class="dropdown-item">Trabaja con nosotros</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Productos</a>
-                <div class="dropdown-menu megamenu">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col col-sm-6 col-lg-2 offset-lg-2">
-                        <h5>POR LÍNEAS</h5>
-                        <ul class="nav flex-column">
-                          <li class="nav-item"><a href="#" class="nav-link">Animales de compañia</a></li>
-                          <li class="nav-item"><a href="#" class="nav-link">Aves y cerdos</a></li>
-                          <li class="nav-item"><a href="#" class="nav-link">Animales mayores</a></li>
-                        </ul>
+          </form>
+        </div>
+        <nav class="navbar navbar-expand-lg  navbar-light">
+          <div class="container">
+            <div class="logo-animation">
+              <a class="navbar-brand logo" href="#"></a>            
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+              aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <div class="toggle-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </button>
+            <div class="collapse navbar-collapse row" id="navbarCollapse">
+              <div class="clear-fix"></div>
+              <ul class="navbar-nav ml-auto pr">
+                <li class="nav-item position-relative">
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Nosotros</a>
+                  <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Sobre Agrovet Market</a>
+                    <a href="#" class="dropdown-item">Directorio de contacto</a>
+                    <a href="#" class="dropdown-item">Aseguramiento de la calidad</a>
+                    <a href="#" class="dropdown-item">Trabaja con nosotros</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Productos</a>
+                  <div class="dropdown-menu megamenu">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-12 col-sm-6 col-lg-2 mr-lg-5 offset-lg-1">
+                          <h5>POR LÍNEAS</h5>
+                          <div class="d-flex flex-nowarp">
+                            <ul class="nav flex-column">
+                              <li class="nav-item"><a href="#" class="nav-link">Animales de compañia</a></li>
+                              <li class="nav-item"><a href="#" class="nav-link">Aves y cerdos</a></li>
+                              <li class="nav-item"><a href="#" class="nav-link">Animales mayores</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                          <h5>POR CATEGORÍA COMERCIAL</h5>
+                          <ul class="order-1 nav ">
+                            <li class="nav-item"><a href="#" class="nav-link">Antibióticos</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Suplementos inyectables</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Antiparasitarios</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Anabólicos</a></li>
+  
+                            <li class="nav-item"><a href="#" class="nav-link">Antiinflamatorios</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Hormonales</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Anéstesicos</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Nutricionales</a></li>
+  
+                            <li class="nav-item"><a href="#" class="nav-link">Otros1</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Otros</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Otros</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                          <h5>POR ESPECIES</h5>
+                          <ul class="nav flex-column">
+                            <li class="nav-item"><a href="#" class="nav-link">Aves de combate</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Aves de corral</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Camélidos</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Caninos</a></li>
+  
+                            <li class="nav-item"><a href="#" class="nav-link">Caprinos</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Conejos</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Equinos</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Felinos</a></li>
+  
+                            <li class="nav-item"><a href="#" class="nav-link">Ovinos</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Peces</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Porcinos</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Vacunos</a></li>
+                          </ul>
+  
+                        </div>
                       </div>
-                      <div class="col col-sm-6 col-lg-4">
-                        <h5>POR CATEGORÍA COMERCIAL</h5>
-                        <ul class="nav flex-column">
-                          <li class="nav-item"><a href="#" class="nav-link">Antibióticos</a></li>
-                          <li class="nav-item"><a href="#" class="nav-link">Suplementos inyectables</a></li>
-                          <li class="nav-item"><a href="#" class="nav-link">Antiparasitarios</a></li>
-                          <li class="nav-item"><a href="#" class="nav-link">Anabólicos</a></li>
-                        </ul>
-                        <ul class="nav flex-column">
-                          <li class="nav-item"><a href="#" class="nav-link">Antiinflamatorios</a></li>
-                          <li class="nav-item"><a href="#" class="nav-link">Hormonales</a></li>
-                          <li class="nav-item"><a href="#" class="nav-link">Anéstesicos</a></li>
-                          <li class="nav-item"><a href="#" class="nav-link">Nutricionales</a></li>
-                        </ul>
-                        <ul class="nav flex-column mr-0">
-                          <li class="nav-item"><a href="#" class="nav-link">Otros1</a></li>
-                          <li class="nav-item"><a href="#" class="nav-link">Otros</a></li>
-                          <li class="nav-item"><a href="#" class="nav-link">Otros</a></li>
-                        </ul>
-                      </div>
-                      <div class="col col-sm-6 col-lg-4">
-                        <h5>POR ESPECIES</h5>
-                        <ul class="nav flex-column">
-                          <li class="nav-item"><a href="#" class="nav-link">Aves de combate</a></li>
-                          <li class="nav-item"><a href="#" class="nav-link">Aves de corral</a></li>
-                          <li class="nav-item"><a href="#" class="nav-link">Camélidos</a></li>
-                          <li class="nav-item"><a href="#" class="nav-link">Caninos</a></li>
-                        </ul>
-                        <ul class="nav flex-column">
-                          <li class="nav-item"><a href="#" class="nav-link">Caprinos</a></li>
-                          <li class="nav-item"><a href="#" class="nav-link">Conejos</a></li>
-                          <li class="nav-item"><a href="#" class="nav-link">Equinos</a></li>
-                          <li class="nav-item"><a href="#" class="nav-link">Felinos</a></li>
-                        </ul>
-                        <ul class="nav flex-column mr-0">
-                          <li class="nav-item"><a href="#" class="nav-link">Ovinos</a></li>
-                          <li class="nav-item"><a href="#" class="nav-link">Peces</a></li>
-                          <li class="nav-item"><a href="#" class="nav-link">Porcinos</a></li>
-                          <li class="nav-item"><a href="#" class="nav-link">Vacunos</a></li>
-                        </ul>
+                    </div>
+                    <div class="megamenu-foot">
+                      <div class="container text-right">
+                        Agrovet Market Animal Health | Productos Veterinarios de Clase Única
                       </div>
                     </div>
                   </div>
-                </div>
-              </li>
-              <li class="nav-item position-relative">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">I&D</a>
-                <div class="dropdown-menu">
-                  <a href="#" class="dropdown-item">Artículo técnico</a>
-                  <a href="#" class="dropdown-item">Evaluación de campo</a>
-                  <a href="#" class="dropdown-item">Investigación</a>
-                </div>
-              </li>
-              <li class="nav-item"><a href="#" class="nav-link">Distribuidores</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Contáctenos</a></li>
-            </ul>
+                </li>
+                <li class="nav-item position-relative">
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">I&D</a>
+                  <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Artículo técnico</a>
+                    <a href="#" class="dropdown-item">Evaluación de campo</a>
+                    <a href="#" class="dropdown-item">Investigación</a>
+                  </div>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link">Distribuidores</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contáctenos</a></li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
-    </div>
-  </header>
+        </nav>
+      </div>
+    </header>
 
   <main role="main">
     <div class="jumbotron bg-black text-white heading-page">
@@ -173,7 +191,8 @@
           <div class="col-12 col-lg-4">
             <h2>Nuestros Productos</h2>
           </div>
-          <div class="col-12 col-lg-3 ml-auto text-right"><a href="#" class="btn btn-black">Busqueda Avanzada</a></div>
+          <div class="col-12 col-lg-3 ml-auto text-right"><a href="#" data-toggle="modal"
+              data-target="#busqueda-avanzada" class="btn btn-black">Busqueda Avanzada</a></div>
         </div>
         <div class="row">
           <div class="col-12 col-lg-4 options">
@@ -464,6 +483,145 @@
     </div>
 
 
+    <div id="busqueda-avanzada" class="middle modal fade" tabindex="-1" role="dialog">
+      <div class="middle modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+              <div id="tab-container" class="tab-container" rel="superbox[content]" data-easytabs="true"> <!-- START TAB CONTAINER-->
+                <div class="bgfiltertitu">
+                    <h1>Búsqueda Avanzada de Productos</h1>
+                    <a href="#" class="closemodal" id="closemodal" onclick="MM_changeProp('taboverlay','','display','none','DIV');MM_changeProp('tabwrapper', '', 'display', 'none', 'DIV')"></a>
+                </div>
+        
+                <ul class="etabs">
+                    <li class="tab active"><a href="#tabs1-html" dir="especies" class="active">Especies</a></li>
+                    <li class="tab"><a href="#tabs1-html2" dir="principios_activos">Principios Activos</a></li>
+                    <li class="tab"><a href="#tabs1-html3" dir="categoria_comercial">Categoría Comercial</a></li>
+                    <li class="tab"><a href="#tabs1-html4" dir="patologias">Patologías</a></li>
+                    <li class="tab"><a href="#tabs1-html5" dir="forma_farmaceutica">Formas Farmacéuticas</a></li>
+                    <li class="tab"><a href="#tabs1-html6" dir="vias_administracion">Vías de administración</a></li>
+                    <li class="tab"><a href="#tabs1-html7" dir="presentaciones">Presentaciones</a></li>
+                    <li class="tab"><a href="#tabs1-html8" dir="lineas_comerciales">Líneas</a></li>
+                </ul>
+                
+                
+                <form action="/producto/envio-formulario-busqueda-avanzada" method="post" id="frmFiltros">
+        
+                <div class="panel-container">
+                    <div id="tabs1-html" class="active" style="">
+                        <div class="cont_chkboxes">
+                             <h4>Especies</h4>
+                            <div class="colbox_two">
+                                                
+                                                            <p class="checkArea dos_columnas">
+                                        <input dir="especies" type="checkbox" name="especies_id[Aves de Combate]" id="especies_id-14" value="14">
+                                        <label for="especies_id-14"><span></span>
+                                    Aves de Combate                                </label>
+                                    </p>
+                                                        <p class="checkArea dos_columnas">
+                                        <input dir="especies" type="checkbox" name="especies_id[Aves de Corral]" id="especies_id-1" value="1">
+                                        <label for="especies_id-1"><span></span>
+                                    Aves de Corral                                </label>
+                                    </p>
+                                                        <p class="checkArea dos_columnas">
+                                        <input dir="especies" type="checkbox" name="especies_id[Camélidos]" id="especies_id-2" value="2">
+                                        <label for="especies_id-2"><span></span>
+                                    Camélidos                                </label>
+                                    </p>
+                                                        <p class="checkArea dos_columnas">
+                                        <input dir="especies" type="checkbox" name="especies_id[Caninos]" id="especies_id-3" value="3">
+                                        <label for="especies_id-3"><span></span>
+                                    Caninos                                </label>
+                                    </p>
+                                                        <p class="checkArea dos_columnas">
+                                        <input dir="especies" type="checkbox" name="especies_id[Caprinos]" id="especies_id-4" value="4">
+                                        <label for="especies_id-4"><span></span>
+                                    Caprinos                                </label>
+                                    </p>
+                                                        <p class="checkArea dos_columnas">
+                                        <input dir="especies" type="checkbox" name="especies_id[Conejos]" id="especies_id-13" value="13">
+                                        <label for="especies_id-13"><span></span>
+                                    Conejos                                </label>
+                                    </p>
+                                                        <p class="checkArea dos_columnas">
+                                        <input dir="especies" type="checkbox" name="especies_id[Cuyes]" id="especies_id-12" value="12">
+                                        <label for="especies_id-12"><span></span>
+                                    Cuyes                                </label>
+                                    </p>
+                                                        <p class="checkArea dos_columnas">
+                                        <input dir="especies" type="checkbox" name="especies_id[Equinos]" id="especies_id-5" value="5">
+                                        <label for="especies_id-5"><span></span>
+                                    Equinos                                </label>
+                                    </p>
+                                                        <p class="checkArea dos_columnas">
+                                        <input dir="especies" type="checkbox" name="especies_id[Felinos]" id="especies_id-6" value="6">
+                                        <label for="especies_id-6"><span></span>
+                                    Felinos                                </label>
+                                    </p>
+                                                        <p class="checkArea dos_columnas">
+                                        <input dir="especies" type="checkbox" name="especies_id[Ovinos]" id="especies_id-7" value="7">
+                                        <label for="especies_id-7"><span></span>
+                                    Ovinos                                </label>
+                                    </p>
+                                                        <p class="checkArea dos_columnas">
+                                        <input dir="especies" type="checkbox" name="especies_id[Peces]" id="especies_id-11" value="11">
+                                        <label for="especies_id-11"><span></span>
+                                    Peces                                </label>
+                                    </p>
+                                                        <p class="checkArea dos_columnas">
+                                        <input dir="especies" type="checkbox" name="especies_id[Porcinos]" id="especies_id-8" value="8">
+                                        <label for="especies_id-8"><span></span>
+                                    Porcinos                                </label>
+                                    </p>
+                                                        <p class="checkArea dos_columnas">
+                                        <input dir="especies" type="checkbox" name="especies_id[Vacunos]" id="especies_id-9" value="9">
+                                        <label for="especies_id-9"><span></span>
+                                    Vacunos                                </label>
+                                    </p>
+                                            </div>
+                        </div>
+                    </div>
+        
+                    <div id="tabs1-html2" class="filtro_altura_fija" style="display: none;">
+                    </div>
+        
+                    <div id="tabs1-html3" class="filtro_altura_fija" style="display: none;">
+                       
+                    </div>
+        
+                    <div id="tabs1-html4" class="filtro_altura_fija" style="display: none;">
+                    </div>
+        
+                    <div id="tabs1-html5" class="filtro_altura_fija" style="display: none;">
+                    </div>
+        
+                    <div id="tabs1-html6" class="filtro_altura_fija" style="display: none;">
+                    </div>
+        
+                    <div id="tabs1-html7" class="filtro_altura_fija" style="display: none;">
+                        
+                    </div>
+                    <div id="tabs1-html8" class="filtro_altura_fija" style="display: none;">
+                        
+                    </div>
+        
+                </div>
+                 <div class="bt_container">
+                    <a href="#"><span id="button1" class="button_filter">Filtrar</span></a>
+                    <input id="buttonBorrar" type="button" value="Borrar" class="button-left">
+                </div><!--//bt_container-->
+                </form>   
+        <script type="text/javascript">
+        $(document).ready( function() {
+          $('#tab-container').easytabs();
+        });
+        </script>
+        
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
