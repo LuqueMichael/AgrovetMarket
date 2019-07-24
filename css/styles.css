@@ -839,19 +839,21 @@ a:focus {
   }
 
   #carousel-principal.carousel {
-    padding-top: 0 !important;
+    padding-top: 2.8rem !important;
   }
 
   /*#carousel-principal .carousel-item img.img-slide{
         width: 200% !important;
         height: 100%;
     }*/
-  #carousel-principal .carousel-item .s-4 {
+  #carousel-principal .carousel-item .s-4,
+  #carousel-principal .s-4 {
     font-size: 2rem;
     line-height: 2.2rem;
   }
 
-  #carousel-principal .carousel-item .sb-5 {
+  #carousel-principal .carousel-item .sb-5 ,
+  #carousel-principal .sb-5 {
     font-size: 2.5rem;
     line-height: 2.4rem;
   }
