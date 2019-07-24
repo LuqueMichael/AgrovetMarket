@@ -284,6 +284,9 @@ a:focus {
 #carousel-principal .carousel-item {
   height: 90vh;
 }
+#carousel-principal video{
+  width: 100%;
+}
 
 #carousel-principal .carousel-item .img-slide {
   animation: slideShow 30s linear infinite 0s;
@@ -292,14 +295,16 @@ a:focus {
   -webkit-animation: slideShow 30s linear infinite 0s;
 }
 
-#carousel-principal .carousel-item .s-4 {
+#carousel-principal .carousel-item .s-4,
+#carousel-principal .s-4 {
   font-size: 4.3rem;
   margin: 0 !important;
   line-height: 5.5rem;
   text-shadow: 0 0 10px #171717;
 }
 
-#carousel-principal .carousel-item .sb-5 {
+#carousel-principal .carousel-item .sb-5,
+#carousel-principal .sb-5 {
   font-size: 6.5rem;
   font-family: 'helvetica-bold';
   margin: 0;
