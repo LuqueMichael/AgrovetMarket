@@ -125,6 +125,9 @@ a:focus {
 
 .heading-page {
   min-height: 500px;
+  height: 500px;
+    overflow: hidden;
+    position: relative;
 }
 
 .heading-page h1 {
@@ -2647,6 +2650,12 @@ i.chev-r {
   margin-top: 20px;
   transition: ease all .3s;
   visibility: visible
+}
+.video-fullwidth{
+  position: absolute;
+  top: -20%;
+  left: 0;
+  width: 100%;
 }
 
 .lista-productos .compareButton {

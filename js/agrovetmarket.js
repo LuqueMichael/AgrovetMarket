@@ -119,6 +119,15 @@ $(function () {
     $('html, body').animate({ scrollTop: 0 }, '300');
   });
 
+    /* MEGAMENU
+  -------------------------------------------------- */
+  $(".nav-principal .navbar-nav").on("mouseover", ".nav-item", function () {
+    $(this).parent().find(".dropdown-menu").removeClass("show");
+    $(this).find(".dropdown-menu").addClass("show");
+  }).on("mouseleave",".dropdown-menu", function () {
+    $(this).removeClass("show");
+  });
+
   /* Header Small / Tall  - ONLY DESKTOP
   *****************************************************/
   if (!isMobileDevice()) {
