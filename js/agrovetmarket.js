@@ -220,7 +220,16 @@ $(function () {
     $(this).removeClass('is-active');
   });
 
-
+  /*$("#carousel-marcas.carousel").find('.carousel-item').each(function(){
+    var next = $(this).next();    
+    var next2 ;
+    if (!next.length) {
+      next = $(this).siblings(':nth-child(1)');
+      next2 = $(this).siblings(':nth-child(2)');
+      console.log($(next2).html());
+    }    
+    next.children(':nth-child(1)').clone().appendTo($(this));
+  });*/
 
 });
 
