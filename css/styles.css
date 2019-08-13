@@ -43,6 +43,17 @@
   vertical-align: middle;
 }
 
+#modalIMG .modal-dialog{
+  margin: 7rem auto;
+}
+
+#modalIMG .modal-dialog .modal-content{
+  border-radius: 0;
+}
+#modalIMG img{
+  cursor: zoom-out;
+}
+
 /* Global CSS
 -------------------------------------------------- */
 /*body,
@@ -3139,7 +3150,7 @@ h1.title {
 .producto-detalle .drift-zoom-pane {
   background: #fff;
 }
-.producto-detalle .zoom-trigger {
+.producto-detalle .image-product {
   cursor: zoom-in;
 }
 

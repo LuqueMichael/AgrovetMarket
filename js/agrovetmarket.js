@@ -220,6 +220,17 @@ $(function () {
     $(this).removeClass('is-active');
   });
 
+  /* Modal LightBox In Product-Detail
+  *****************************************************/
+  $(".image-product").on("click",function(){
+    var urlImage = $(this).attr("src");
+    $("#modalIMG").find("img").attr("src",urlImage);
+    $("#modalIMG").modal("show");
+  });
+  $("#modalIMG img").on("click",function(){
+    $("#modalIMG").modal("hide");
+  });
+
   /*$("#carousel-marcas.carousel").find('.carousel-item').each(function(){
     var next = $(this).next();    
     var next2 ;

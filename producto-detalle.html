@@ -13,7 +13,7 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="plugins/magic_css/magic.min.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="plugins/zoom/drift-basic.css">
+  <!--<link rel="stylesheet" href="plugins/zoom/drift-basic.css">-->
   <link rel="stylesheet" href="css/styles.css">
   <style>
     main {
@@ -195,8 +195,9 @@
     <div class="container" style="position: relative">
       <div class="row ">
         <div class="col-lg-6">
-          <img src="images/aminoplexforte-1.png" alt="" class="image-product img-fluid zoom-trigger"
-            data-zoom="images/aminoplexforte-1.png">
+          <!--<img src="images/aminoplexforte-1.png" alt="" class="image-product img-fluid zoom-trigger"
+            data-zoom="images/aminoplexforte-1.png">-->
+            <img src="images/aminoplexforte-1.png" class="image-product img-fluid">
         </div>
         <div class="col-lg-6">
           <div class="info-producto">
@@ -626,6 +627,21 @@
     </div>
   </div>
 
+  
+  <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="modalIMG" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body mb-0">
+          <img src="" alt="" style="width:100%">
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-black btn-rounded btn-md ml-4 text-center" data-dismiss="modal"
+            type="button">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
   <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
   <script src="js/bootstrap.bundle.min.js"></script>
@@ -633,7 +649,7 @@
   <script>
     AOS.init();
   </script>
-  <script src="plugins/zoom/Drift.min.js"></script>
+  <!--<script src="plugins/zoom/Drift.min.js"></script>
   <script>
     /* ZOOM PRODUCT
 -------------------------------------------------- */
@@ -644,7 +660,7 @@
       paneContainer: paneContainer,
       inlinePane: false,
     });
-  </script>
+  </script>-->
   <script src="js/agrovetmarket.js"></script>
 </body>
 
