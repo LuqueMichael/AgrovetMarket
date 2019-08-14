@@ -53,6 +53,10 @@
 #modalIMG img{
   cursor: zoom-out;
 }
+.modal-open .modal {
+  transition: ease all .3s;
+}
+.modal.fade .modal-dialog { transition: ease all .3s; }
 
 /* Global CSS
 -------------------------------------------------- */

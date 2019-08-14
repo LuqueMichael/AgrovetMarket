@@ -223,7 +223,7 @@ $(function () {
   /* Modal LightBox In Product-Detail
   *****************************************************/
   $(".image-product").on("click",function(){
-    var urlImage = $(this).attr("src");
+    var urlImage = $(this).attr("data-zoom");
     $("#modalIMG").find("img").attr("src",urlImage);
     $("#modalIMG").modal("show");
   });
