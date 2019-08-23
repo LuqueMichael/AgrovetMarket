@@ -118,9 +118,9 @@ $(function () {
     e.preventDefault();
     $('html, body').animate({ scrollTop: 0 }, '300');
   });
-  $(".item__hover__bubble").on("mouseover",function(){
+  $(".item__hover__bubble").on("mouseover", function () {
     $(this).find(".bubble").addClass("show");
-  }).on("mouseleave",function(){
+  }).on("mouseleave", function () {
     $(this).find(".bubble").removeClass("show");
   });
 
@@ -222,14 +222,67 @@ $(function () {
 
   /* Modal LightBox In Product-Detail
   *****************************************************/
-  $(".image-product").on("click",function(){
+  $(".image-product").on("click", function () {
     var urlImage = $(this).attr("data-zoom");
-    $("#modalIMG").find("img").attr("src",urlImage);
+    $("#modalIMG").find("img").attr("src", urlImage);
     $("#modalIMG").modal("show");
   });
-  $("#modalIMG img").on("click",function(){
+  $("#modalIMG img").on("click", function () {
     $("#modalIMG").modal("hide");
   });
+
+
+
+
+  
+$('#carousel-marcas.carousel .carousel-item').each(function(){
+  var next = $(this).next();  
+  var $items = $("<div class='row'></div>");    
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }  
+  next.children(':first-child').clone().appendTo($items);    
+  for (var i=0;i<2;i++) {
+    next=next.next();
+    if (!next.length) {
+    	next = $(this).siblings(':first');
+  	}    
+    next.children(':first-child').clone().appendTo($items);
+  }    
+  $(this).append($items);  
+}).each(function(){
+  var $itemFirst = $(this).children(':first');
+  $itemFirst.prependTo($(this).children('.row'));
+});
+
+
+
+$('#carouselExample').on('slide.bs.carousel', function (e) {
+
+  
+  var $e = $(e.relatedTarget);
+  var idx = $e.index();
+  var itemsPerSlide = 4;
+  var totalItems = $('.carousel-item').length;
+  
+  if (idx >= totalItems-(itemsPerSlide-1)) {
+      var it = itemsPerSlide - (totalItems - idx);
+      for (var i=0; i<it; i++) {
+          // append slides to end
+          if (e.direction=="left") {
+              $('.carousel-item').eq(i).appendTo('.carousel-inner');
+          }
+          else {
+              $('.carousel-item').eq(0).appendTo('.carousel-inner');
+          }
+      }
+  }
+});
+
+
+$('#carouselExample').carousel({ 
+              interval: 2000
+      });
 
   /*$("#carousel-marcas.carousel").find('.carousel-item').each(function(){
     var next = $(this).next();    
