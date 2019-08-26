@@ -154,6 +154,7 @@ button, input, select,a{
 .heading-page h1 {
   font-family: 'helvetica-bold';
   font-size: 4.5rem;
+  text-transform: capitalize;
 }
 
 .heading-page h2 {
@@ -1731,7 +1732,9 @@ i.chev-r {
 
 #directorio .cargo {
   font-size: 1rem;
-  color: #846f51
+  color: #846f51;
+  line-height: 1;
+  max-height: 24px;
 }
 
 #directorio .resume a {
