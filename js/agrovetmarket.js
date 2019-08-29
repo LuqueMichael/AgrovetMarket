@@ -219,30 +219,6 @@ $(function () {
   });
 
 
-
-/*
-
-  $('#carousel-marcas.carousel .carousel-item').each(function () {
-    var next = $(this).next();
-    var $items = $("<div class='row'></div>");
-    if (!next.length) {
-      next = $(this).siblings(':first');
-    }
-    next.children(':first-child').clone().appendTo($items);
-    for (var i = 0; i < 1; i++) {
-      next = next.next();
-      if (!next.length) {
-        next = $(this).siblings(':first');
-      }
-      next.children(':first-child').clone().appendTo($items);
-    }
-    $(this).append($items);
-  }).each(function () {
-    var $itemFirst = $(this).children(':first');
-    $itemFirst.prependTo($(this).children('.row'));
-  });*/
-
-
   /* Carousel marcas
   *****************************************************/
  $('#carousel-marcas').carousel();
@@ -267,21 +243,16 @@ $(function () {
     autoplayTimeout: 7000,
     smartSpeed: 800,    
     nav: false,
-    responsive: {
-      0: {
-        items: 1
+    responsive:{
+      0:{
+          items:1,
+          nav:true
       },
-
-      600: {
-        items: 3
+      680:{
+          items:2
       },
-
-      1024: {
-        items: 2
-      },
-
-      1366: {
-        items: 3
+      1000:{
+          items:3
       }
     }
   });
