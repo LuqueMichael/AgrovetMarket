@@ -2049,6 +2049,9 @@ i.chev-r {
   padding-bottom: 2px;
 }
 
+#filters .linea { max-width: 80% !important}
+#filters .especie { max-width: 65% !important}
+
 #filters button.btn-filters.active {
   border: 1px solid #9d7d3f;
   color: #7b622f !important;

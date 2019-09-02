@@ -111,6 +111,12 @@ $(function () {
     $(this).find(".bubble").removeClass("show");
   });
 
+  $("#filters .dropdown-menu").each(function(i,item){
+    var $el = $(item);	
+    var $bro = $(item).prev();
+    $bro.css("width", $el.width() );    
+  })
+
   /* MEGAMENU
 -------------------------------------------------- */
   $(".nav-principal .navbar-nav").on("mouseover", ".nav-item", function () {
