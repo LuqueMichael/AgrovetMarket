@@ -955,6 +955,13 @@ a {
     bottom: 2rem;
   }
 
+  #carousel-principal .carousel-caption img{
+    transform: scale(.3);
+    position: absolute;
+    right: -70px;
+    bottom: -5.5rem;
+  }
+
   /*
   #carousel-principal.carousel.small {
     padding-top: 5rem;
@@ -1298,6 +1305,17 @@ a {
   font-size: 0.98rem;
   width: 140px;
   padding: .6rem 0;
+}
+
+.owl-nav .owl-prev,
+.owl-nav .owl-next{
+  width: 30px;
+    background: #C9C7C8;
+    border: 0px solid #8c8c8c;
+    color: #212529;
+    font-size: 1.5rem;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 /*-- Noticias */
@@ -1919,6 +1937,8 @@ i.chev-r {
     height: 610px !important;
   }
 
+  #map .r--map { margin-top: 0 !important; }
+
   #map h1 {
     font-size: 1.9rem;
     margin-top: 2rem;
@@ -2015,7 +2035,7 @@ i.chev-r {
 }
 
 #filters button.btn-filters {
-  max-width: 50%;
+  max-width: 55%;
   overflow: hidden;
   text-overflow: ellipsis;
   height: 31px;
@@ -2374,6 +2394,13 @@ i.chev-r {
   .linea-tiempo .col-6 {
     padding-left: 1.2rem;
   }
+  .linea-tiempo .punto{
+    left: 0;
+  }
+  .linea-tiempo .odd .punto {
+    left: inherit;
+    right: -2rem;
+  }  
 }
 
 /* Nosotros
@@ -2490,6 +2517,10 @@ i.chev-r {
 @media(max-width: 800px) {
   .nosotros .title {
     font-size: 2rem;
+  }
+
+  .nosotros .resume .r--resume {
+    text-align: center !important;
   }
 
   .nosotros .subtitle {
@@ -3494,6 +3525,9 @@ h1.title {
 @media(max-width: 800px){
   .oficinas .oficina .item:nth-child(2), .oficinas .linea .item:nth-child(2), .oficinas .interes .item:nth-child(2){
     padding-left: 3rem !important;
+  }
+  .oficinas .interes .item:nth-child(6){
+    margin: 0;
   }
 }
 
