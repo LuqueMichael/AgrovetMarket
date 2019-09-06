@@ -75,6 +75,7 @@ $(function () {
   *****************************************************/
   $('#carousel-noticias-1').carousel();
   $('.noticias-1 .next').click(function () {
+    console.log("click");
     $('#carousel-noticias-1').carousel('next');
     toggleSliderControls($('#carousel-noticias-1'));
     return false;

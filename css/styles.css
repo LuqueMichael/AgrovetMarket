@@ -1,18 +1,30 @@
 /* Import fonts
 -------------------------------------------------- */
-@font-face {
+/*@font-face {
   font-family: 'helvetica-roman';
   src: url(../fonts/HelveticaLTStd-Roman.otf);
+}*/
+@font-face {
+  font-family: 'roboto-regular';
+  src: url(../fonts/Roboto-Regular.otf);
 }
-
+/*
 @font-face {
   font-family: 'helvetica-light';
   src: url(../fonts/HelveticaLTStd-Light.otf);
+}*/
+@font-face {
+  font-family: 'roboto-light';
+  src: url(../fonts/Roboto-Light.otf);
 }
-
+/*
 @font-face {
   font-family: 'helvetica-bold';
   src: url(../fonts/HelveticaLTStd-Bold.otf);
+}*/
+@font-face {
+  font-family: 'roboto-black';
+  src: url(../fonts/Roboto-Black.otf);
 }
 
 /*@font-face{font-family:'gothic';src:url(../fonts/GOTHIC.otf);}*/
@@ -98,7 +110,7 @@ a {
 
 .jumbotron h1.title {
   font-size: 3.1rem;
-  font-family: 'helvetica-roman';
+  font-family: 'roboto-regular';
   position: relative;
 }
 
@@ -108,14 +120,14 @@ a {
 
 .breadcrumb {
   background-color: #fff;
-  font-family: 'helvetica-roman';
+  font-family: 'roboto-regular';
   font-size: 0.8rem;
   color: #454545;
   padding: 0;
 }
 
 .breadcrumb .breadcrumb-item.active {
-  font-family: 'helvetica-bold';
+  font-family: 'roboto-black';
   color: #454545;
 }
 
@@ -140,7 +152,7 @@ a {
 }
 
 .btn-black {
-  font-family: 'helvetica-light';
+  font-family: 'roboto-light';
   background-color: #000;
   color: #fff;
   font-size: 0.75rem;
@@ -162,18 +174,18 @@ a {
 }
 
 .heading-page h1 {
-  font-family: 'helvetica-bold';
+  font-family: 'roboto-black';
   font-size: 4.5rem;
   text-transform: capitalize;
 }
 
 .heading-page h2 {
-  font-family: 'helvetica-roman';
+  font-family: 'roboto-regular';
   font-size: 2.9rem;
 }
 
 .heading-page p {
-  font-family: 'helvetica-roman';
+  font-family: 'roboto-regular';
   font-size: 1rem;
 }
 
@@ -301,7 +313,7 @@ a {
 #carousel-principal.carousel {
   /*padding-top: 4.4rem;*/
   margin-bottom: 4rem;
-  font-family: 'helvetica-light', Arial, Helvetica, sans-serif;
+  font-family: 'roboto-light', Arial, Helvetica, sans-serif;
   transition: ease all .5s;
 }
 
@@ -342,7 +354,7 @@ a {
 #carousel-principal .carousel-item .sb-5,
 #carousel-principal .sb-5 {
   font-size: 6.5rem;
-  font-family: 'helvetica-bold';
+  font-family: 'roboto-black';
   margin: 0;
   line-height: 6rem;
   text-shadow: 0 0 10px #171717;
@@ -389,7 +401,7 @@ a {
 
 /*-- Nav top */
 .nav-top {
-  font-family: 'helvetica-light', Arial, Helvetica, sans-serif;
+  font-family: 'roboto-light', Arial, Helvetica, sans-serif;
   height: 40px;
   max-height: 40px;
   overflow: hidden;
@@ -512,7 +524,7 @@ a {
 
 /*-- Nav principal */
 .nav-principal {
-  font-family: 'helvetica-light', Arial, Helvetica, sans-serif;
+  font-family: 'roboto-light', Arial, Helvetica, sans-serif;
   padding: 1rem 0 1.6rem 0;
   width: 100%;
   height: 154px;
@@ -745,7 +757,7 @@ a {
   font-size: 1.125rem;
   margin: 2rem 0 1.7rem;
   color: #55575b !important;
-  font-family: "helvetica-roman";
+  font-family: "roboto-regular";
 }
 
 .nav-principal .megamenu .nav {
@@ -1171,7 +1183,7 @@ a {
 
 /*-- Enfocados */
 .enfocados {
-  font-family: 'helvetica-light';
+  font-family: 'roboto-light';
   margin-bottom: 4rem;
   padding: 4rem 0 10.5rem 0;
 }
@@ -1193,7 +1205,7 @@ a {
 }
 
 .enfocados h1.title>.bold {
-  font-family: 'helvetica-bold';
+  font-family: 'roboto-black';
 }
 
 .enfocados .lead {
@@ -1202,13 +1214,13 @@ a {
 }
 
 .enfocados .more {
-  font-family: 'helvetica-roman';
+  font-family: 'roboto-regular';
   font-weight: 'bold';
 }
 
 /*-- Nuestras marcas */
 .marcas {
-  font-family: 'helvetica-light';
+  font-family: 'roboto-light';
   background-color: #f6f6f6 !important;
   padding-top: 9rem;
   position: relative;
@@ -1262,7 +1274,7 @@ a {
   margin: auto;
 }
 .carousel-marcas .body-hover {
-  font-family: 'helvetica-roman';
+  font-family: 'roboto-regular';
   position: absolute;
   width: 100%;
   height: 67%;
@@ -1320,7 +1332,7 @@ a {
 
 /*-- Noticias */
 .noticias {
-  font-family: 'helvetica-light';
+  font-family: 'roboto-light';
   background-color: #fff !important;
   padding-top: 9rem;
   position: relative;
@@ -1339,7 +1351,7 @@ a {
 
 .noticias .card {
   border: 0 !important;
-  font-family: 'helvetica-light';
+  font-family: 'roboto-light';
 }
 
 .noticias .card .card-img-top {
@@ -1347,7 +1359,7 @@ a {
 }
 
 .noticias h4.title {
-  font-family: 'helvetica-roman';
+  font-family: 'roboto-regular';
   font-size: 0.99rem;
   color: #846f52;
   position: relative;
@@ -1406,7 +1418,7 @@ a {
 
 /*-- Footer */
 .footer {
-  font-family: 'helvetica-roman';
+  font-family: 'roboto-regular';
   font-size: 0.8rem;
   background: #202020;
   padding: 5rem 0 14rem 0;
@@ -1419,7 +1431,7 @@ a {
 }
 
 .footer h6.ul-heading {
-  font-family: 'helvetica-bold';
+  font-family: 'roboto-black';
   font-size: 0.9rem;
   padding-bottom: 10px;
 }
@@ -1455,7 +1467,7 @@ a {
   background: #1C1C1C;
   position: absolute;
   bottom: 0;
-  font-family: 'helvetica-light';
+  font-family: 'roboto-light';
 }
 
 .footer .copyright .company {
@@ -1497,13 +1509,13 @@ a {
 }
 
 #contactenos .fieldset {
-  font-family: helvetica-roman;
+  font-family: roboto-regular;
   color: #333;
   margin-bottom: 1rem;
 }
 
 #contactenos .menu h1 {
-  font-family: 'helvetica-bold';
+  font-family: 'roboto-black';
   font-size: 40px;
   color: #333;
   margin-bottom: 30px;
@@ -1515,7 +1527,7 @@ a {
 }
 
 #contactenos .menu ul li {
-  font-family: 'helvetica-roman';
+  font-family: 'roboto-regular';
   font-size: 14px;
   color: #868686;
   margin-left: 4px;
@@ -1618,7 +1630,7 @@ i.chev-r {
   margin-top: 65px;
   background: #303030;
   color: #fff;
-  font-family: 'helvetica-bold';
+  font-family: 'roboto-black';
 }
 
 #contactenos .btn-submit:hover {
@@ -1634,7 +1646,7 @@ i.chev-r {
   border-radius: 0;
   color: #9c9c9c;
   font-size: 14px;
-  font-family: 'helvetica-light';
+  font-family: 'roboto-light';
 }
 
 #contactenos input.form-control::placeholder,
@@ -1688,7 +1700,7 @@ i.chev-r {
   padding-left: 21px;
   margin-bottom: 12px;
   cursor: pointer;
-  font-family: 'helvetica-roman';
+  font-family: 'roboto-regular';
   font-size: .8rem;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1747,7 +1759,7 @@ i.chev-r {
   background: url(../images/icons/icon-refresh.png) no-repeat;
   padding: 5px 0;
   padding-left: 1.6rem;
-  font-family: 'helvetica-roman';
+  font-family: 'roboto-regular';
   font-size: 0.75rem;
   transition: ease all .5s;
 }
@@ -1761,12 +1773,12 @@ i.chev-r {
 /* Directorio Page
 -------------------------------------------------- */
 #directorio {
-  font-family: 'helvetica-roman';
+  font-family: 'roboto-regular';
   color: #55575b;
 }
 
 #directorio .title {
-  font-family: 'helvetica-bold';
+  font-family: 'roboto-black';
   font-size: 1.3rem;
   margin-bottom: 3rem;
 }
@@ -1776,7 +1788,7 @@ i.chev-r {
 }
 
 #directorio h3 {
-  font-family: 'helvetica-light';
+  font-family: 'roboto-light';
   font-size: 1.8rem;
   line-height: 20px;
 }
@@ -1818,7 +1830,7 @@ i.chev-r {
 /* Distribuidor Page
 -------------------------------------------------- */
 #map {
-  font-family: 'helvetica-light';
+  font-family: 'roboto-light';
   height: 820px;
   position: relative;
 }
@@ -1857,12 +1869,12 @@ i.chev-r {
 }
 
 #distribuidores .fieldset {
-  font-family: helvetica-roman;
+  font-family: roboto-regular;
   color: #333;
 }
 
 #distribuidores h1 {
-  font-family: 'helvetica-bold';
+  font-family: 'roboto-black';
   font-size: 36px;
   color: #333;
   margin-bottom: 30px;
@@ -1874,7 +1886,7 @@ i.chev-r {
 }
 
 #distribuidores form label {
-  font-family: 'helvetica-bold';
+  font-family: 'roboto-black';
   font-size: 16px;
   color: #55575b;
 }
@@ -1911,20 +1923,20 @@ i.chev-r {
 
 #distribuidores .distribuidores-contenedor .item ul h1 {
   font-size: 30px;
-  font-family: 'helvetica-light';
+  font-family: 'roboto-light';
   color: #55575b;
   margin-bottom: 20px;
 }
 
 #distribuidores h1.title {
   font-size: 3.12rem;
-  font-family: 'helvetica-light';
+  font-family: 'roboto-light';
   color: #333333;
   margin-bottom: 40px;
 }
 
 #distribuidores .distribuidores-contenedor .item ul {
-  font-family: 'helvetica-roman';
+  font-family: 'roboto-regular';
   font-size: 16px;
   list-style-type: none;
   color: #55575b;
@@ -1935,6 +1947,7 @@ i.chev-r {
 @media(max-width: 800px) {
   #map {
     height: 610px !important;
+    margin-bottom: 17rem !important;
   }
 
   #map .r--map { margin-top: 0 !important; }
@@ -1979,12 +1992,12 @@ i.chev-r {
 }
 
 #filters h2 {
-  font-family: 'helvetica-light';
+  font-family: 'roboto-light';
   font-size: 2.25rem;
 }
 
 #filters label {
-  font-family: 'helvetica-roman';
+  font-family: 'roboto-regular';
   font-size: 1rem;
 }
 
@@ -2086,6 +2099,8 @@ i.chev-r {
     max-width: 100% !important;
     padding-left: 0 !important;
   }
+  #filters .linea { max-width: 100% !important}
+  #filters .especie { max-width: 100% !important}
 }
 
 .articles {
@@ -2110,7 +2125,7 @@ i.chev-r {
 }
 
 .post header .h1 {
-  font-family: 'helvetica-bold';
+  font-family: 'roboto-black';
   font-size: 20px;
   color: #000;
   margin-bottom: 2px;
@@ -2122,14 +2137,14 @@ i.chev-r {
 }
 
 .post header h4 {
-  font-family: 'helvetica-roman';
+  font-family: 'roboto-regular';
   font-size: 15px;
   color: #000;
   margin-bottom: 10px;
 }
 
 .post section {
-  font-family: 'helvetica-roman';
+  font-family: 'roboto-regular';
   color: #333333;
   line-height: 17px;
   margin-top: 17px;
@@ -2187,14 +2202,14 @@ i.chev-r {
 }
 
 .post .description .link-more {
-  font-family: 'helvetica-roman';
+  font-family: 'roboto-regular';
   font-size: 14px;
   color: #55575b;
   float: right;
 }
 
 .pagination {
-  font-family: 'helvetica-roman';
+  font-family: 'roboto-regular';
   font-size: 1rem;
   margin: 4rem 0 9rem;
 }
@@ -2264,7 +2279,7 @@ i.chev-r {
 /* Linea de Tiempo Page
 -------------------------------------------------- */
 .linea-tiempo {
-  font-family: 'helvetica-roman';
+  font-family: 'roboto-regular';
   position: relative;
 }
 
@@ -2285,7 +2300,7 @@ i.chev-r {
 }
 
 .linea-tiempo.heading-page h1 {
-  font-family: 'helvetica-light';
+  font-family: 'roboto-light';
   font-size: 3.75rem;
   color: #98999c;
 }
@@ -2330,7 +2345,7 @@ i.chev-r {
 }
 
 .linea-tiempo .odd p.descrip {
-  font-family: 'helvetica-light';
+  font-family: 'roboto-light';
   font-size: 0.87rem;
   margin-top: 10px;
   margin-bottom: 3.5rem;
@@ -2409,7 +2424,7 @@ i.chev-r {
 /* Nosotros
 -------------------------------------------------- */
 .nosotros {
-  font-family: 'helvetica-light';
+  font-family: 'roboto-light';
   color: #0a0a0a;
 }
 
@@ -2437,7 +2452,7 @@ i.chev-r {
 }
 
 .nosotros .title {
-  font-family: 'helvetica-bold';
+  font-family: 'roboto-black';
   font-size: 3rem;
 }
 
@@ -2463,7 +2478,7 @@ i.chev-r {
 
 .nosotros .norms h3 {
   width: fit-content;
-  font-family: 'helvetica-roman';
+  font-family: 'roboto-regular';
   font-size: 1.87rem;
   padding-bottom: 1px;
   margin-top: 8px;
@@ -2487,7 +2502,7 @@ i.chev-r {
 }
 
 .nosotros .valores strong {
-  font-family: 'helvetica-bold';
+  font-family: 'roboto-black';
 }
 
 .nosotros .valores .valor {
@@ -2497,7 +2512,7 @@ i.chev-r {
 
 .nosotros .valores .valor h4 {
   width: fit-content;
-  font-family: 'helvetica-bold';
+  font-family: 'roboto-black';
   padding-bottom: 5px;
   margin-bottom: 15px;
   font-size: 1.1rem;
@@ -2514,7 +2529,7 @@ i.chev-r {
 
 .nosotros .valores p.last-text {
   font-size: 1.12rem;
-  font-family: 'helvetica-bold';
+  font-family: 'roboto-black';
 }
 
 @media(max-width: 800px) {
@@ -2566,7 +2581,7 @@ i.chev-r {
 -------------------------------------------------- */
 .noticias-page {
   color: #333333;
-  font-family: 'helvetica-light';
+  font-family: 'roboto-light';
 }
 
 .noticias-page .card {
@@ -2574,7 +2589,7 @@ i.chev-r {
 }
 
 .noticias-page .card-heading h1 {
-  font-family: 'helvetica-bold';
+  font-family: 'roboto-black';
   font-size: 2.25rem;
 }
 
@@ -2625,7 +2640,7 @@ i.chev-r {
 }
 
 .noticias-page .card.widget .card-body {
-  font-family: 'helvetica-roman';
+  font-family: 'roboto-regular';
   color: #55575b !important;
   padding-left: 2rem;
   overflow: hidden;
@@ -2633,7 +2648,7 @@ i.chev-r {
 
 .noticias-page .card.widget .card-header {
   background: #F7F7F7;
-  font-family: 'helvetica-roman';
+  font-family: 'roboto-regular';
   font-size: 1rem;
   color: #55575b;
   padding-left: 2rem;
@@ -2838,7 +2853,7 @@ i.chev-r {
   box-shadow: 1px 3px 5px #dad0bc;
   position: absolute;
   z-index: 9;
-  font-family: helvetica-light;
+  font-family: roboto-light;
   transform: translateX(-9rem);
   transition: ease all .3s;
 }
@@ -2903,13 +2918,13 @@ i.chev-r {
 h1.title {
   color: #333;
   font-size: 36px;
-  font-family: 'helvetica-bold';
+  font-family: 'roboto-black';
   margin-bottom: 35px;
 }
 
 .lista-productos .card-body h5.card-title,
 .lista-productos .card-body a.card-title {
-  font-family: 'helvetica-bold';
+  font-family: 'roboto-black';
   font-size: 20px;
   color: #000;
   padding-left: 15px;
@@ -2931,7 +2946,7 @@ h1.title {
 }
 
 .lista-productos .card-body h6.card-subtitle {
-  font-family: 'helvetica-roman';
+  font-family: 'roboto-regular';
   font-size: 15px;
   color: #211915;
   padding-left: 15px;
@@ -2941,7 +2956,7 @@ h1.title {
 }
 
 .lista-productos .card-body h6.card-subtitle-2 {
-  font-family: 'helvetica-roman';
+  font-family: 'roboto-regular';
   font-size: 15px;
   color: #846f51;
   margin-top: 5px;
@@ -2949,7 +2964,7 @@ h1.title {
 }
 
 .lista-productos .card-body a.link-more {
-  font-family: 'helvetica-roman';
+  font-family: 'roboto-regular';
   font-size: 14px;
   color: #55575b;
   float: left;
@@ -3023,7 +3038,7 @@ h1.title {
 .lista-productos .popcheck {
   max-width: 20rem;
   background: #fff;
-  font-family: 'helvetica-light';
+  font-family: 'roboto-light';
   padding: 1.2rem .9rem;
   border: 1px solid #aeadab;
   font-size: 14px;
@@ -3045,7 +3060,7 @@ h1.title {
 }
 
 .lista-productos .popcheck strong {
-  font-family: 'helvetica-bold'
+  font-family: 'roboto-black'
 }
 
 .lista-productos .popcheck a.btn-close {
@@ -3076,14 +3091,14 @@ h1.title {
 /* Producto Detalle
 -------------------------------------------------- */
 .producto-detalle .info-producto h1.title {
-  font-family: 'helvetica-bold';
+  font-family: 'roboto-black';
   font-size: 26.9px;
   color: #000;
   margin-bottom: 5px;
 }
 
 .producto-detalle .info-producto h4.subtitle {
-  font-family: 'helvetica-roman';
+  font-family: 'roboto-regular';
   font-size: 17.9px;
   color: #bea373;
   margin-bottom: 15px;
@@ -3103,7 +3118,7 @@ h1.title {
 }
 
 .producto-detalle .info-producto .tipo {
-  font-family: 'helvetica-roman';
+  font-family: 'roboto-regular';
   font-size: 15px;
   color: #55575b;
 }
@@ -3117,7 +3132,7 @@ h1.title {
 }
 
 .producto-detalle .info-producto .card-body {
-  font-family: 'helvetica-light';
+  font-family: 'roboto-light';
   font-size: 14px;
   color: #211915;
   padding: 25px 0 !important;
@@ -3141,7 +3156,7 @@ h1.title {
 }
 
 .producto-detalle .info-producto .card-header .btn-link {
-  font-family: 'helvetica-roman';
+  font-family: 'roboto-regular';
   font-size: 15.5px;
   color: #211915;
   width: 100%;
@@ -3176,7 +3191,7 @@ h1.title {
 }
 
 .producto-detalle ul.nav li a.nav-link {
-  font-family: helvetica-roman;
+  font-family: roboto-regular;
   color: #76777a;
   text-decoration: none;
   letter-spacing: .1px;
@@ -3217,7 +3232,7 @@ h1.title {
 }
 
 .producto-detalle .submenu button.btn.btn-buy {
-  font-family: 'helvetica-roman';
+  font-family: 'roboto-regular';
   background: #303030;
   height: 100%;
   border-radius: 0;
@@ -3233,7 +3248,7 @@ h1.title {
 }
 
 .producto-detalle .warning {
-  font-family: 'helvetica-roman';
+  font-family: 'roboto-regular';
   font-size: 12px;
   color: #55575b;
   background: url(../images/icons/icon-warning.png) no-repeat 34px 23px;
@@ -3242,7 +3257,7 @@ h1.title {
 
 .producto-detalle h2.title {
   font-size: 2.25rem;
-  font-family: 'helvetica-roman';
+  font-family: 'roboto-regular';
   text-align: center;
   margin-bottom: 65px;
 }
@@ -3471,7 +3486,7 @@ h1.title {
 /* Oficinas Regionales
 -------------------------------------------------- */
 .oficinas {
-  font-family: 'helvetica-light';
+  font-family: 'roboto-light';
   padding-top: 4rem;
 }
 
@@ -3503,7 +3518,7 @@ h1.title {
 }
 
 .oficinas .item p {
-  font-family: 'helvetica-bold';
+  font-family: 'roboto-black';
   font-size: 1.3rem;
   margin: 2rem 0 0 0;
 }
@@ -3516,13 +3531,13 @@ h1.title {
 
 .oficinas .heading-page h1 {
   font-size: 2.93rem;
-  font-family: 'helvetica-roman';
+  font-family: 'roboto-regular';
   margin-bottom: 2rem;
 }
 
 .oficinas .heading-page p {
   font-size: 1em;
-  font-family: 'helvetica-roman';
+  font-family: 'roboto-regular';
 }
 
 @media(max-width: 800px){
@@ -3537,7 +3552,7 @@ h1.title {
 /* Comparacion Page
 -------------------------------------------------- */
 .comparacion h1 {
-  font-family: "helvetica-light";
+  font-family: "roboto-light";
   font-size: 1.75rem;
   margin: 2rem 0;
 }
@@ -3545,7 +3560,7 @@ h1.title {
 .comparacion .heading {
   background: #f2f2f2;
   padding: .6rem 1rem;
-  font-family: "helvetica-roman";
+  font-family: "roboto-regular";
   font-size: 18px;
   color: #333333;
 }
@@ -3592,7 +3607,7 @@ h1.title {
 /* Fixes
 -------------------------------------------------- */
 .tab-container {
-  font-family: "helvetica-light";
+  font-family: "roboto-light";
 }
 
 .tab-container .bgfiltertitu {
@@ -3600,7 +3615,7 @@ h1.title {
 }
 
 .tab-container .bgfiltertitu h1 {
-  font-family: "helvetica-roman";
+  font-family: "roboto-regular";
   line-height: 25px;
 }
 
@@ -3613,7 +3628,7 @@ h1.title {
 
 .tab-container .bt_container>input[type="button"],
 span.button_filter {
-  font-family: "helvetica-light" !important;
+  font-family: "roboto-light" !important;
   padding: .4rem 0.8rem !important;
   line-height: initial !important;
 }
